@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>shopping</title>
+    <style type="text/css">
+	
+		*{
+			margin:auto;
+			padding:0;
+			border:0;
+			margin:auto;
+		}
+	
+		.inline-block{
+			border:1px solid gray;
+			background-color:#232121;;
+			color:white;
+			width:1348px;
+			display: block;
+			margin: 0 auto;
+			}
+	
+		.inline-block span{
+			display:inline-block;
+			padding:15px;
+		}
+		
+		.left{
+			margin-left:100px;
+		}
+		
+		.right{
+			margin-right:100px;
+		}
+	
+		.inline-block a{
+			float:right;
+			display:inline-block;
+			padding:15px;
+			color:white;
+		}
+		
+		.img0{
+			width:8%;
+			float:left;
+			box-sizing:border-box;
+			margin: 6px 100px;
+		}
+		
+		.home li{
+			display:inline-block;
+			padding:15px;
+			font-size:20px;
+		}
+		
+		.home ul{
+			display:block;
+			text-align:center;
+			width:1351px;
+			
+		}
+		
+		.button{
+			display: table;
+			margin-top: -50px;
+			float:right;
+		}
+	
+		.home input,button{
+			float:right;
+			border: 1px solid #797171;
+			margin-top: 15px;
+			margin-right:3px;
+			padding:3px;
+			
+		}
+		
+		.mean-img{
+			width: 1348px;
+			display: block;
+			margin: 0 auto;
+		}
+		
+		.in-img-width{
+			width:1348px;
+		}
+		
+		.in-img {
+			display: inline-block;
+            width: 43%;            
+			top:18%;
+			margin-left:60px;
+			text-align:justify;
+			position:absolute;	
+			font-size: 18px;
+			font-weight: bold;
+			padding:10px;
+		}
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+        .divfirst {
+            display: block;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            font-style: normal;
+            margin: 50px;
+            font-size: 40px;
+			margin-bottom: 0px;
+        }
+		
+		h4{
+			margin:10px;
+		}
+
+        .hr1 {
+            width: 150px;
+            height: 1px;
+            background-color: red;
+            vertical-align: top;
+            border: 0px;
+			margin-bottom:5px;
+			
+        }
+
+        .hr2 {
+            width: 100px;
+            height: 1px;
+            background-color: red;
+            border: 0px;
+			margin-bottom: 30px;
+        }
+
+        .list li {
+            display: inline-block;
+            padding: 15px;
+        }
+
+        .divimg {
+            display: block;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .img {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        div.divsecond {
+            width: 25%;
+            float: left;
+        }
+		
+		.divsecond a{
+			text-transform: uppercase;
+			padding: 10px;
+			display: inline-block;
+			width: 100%;
+			box-sizing: border-box;
+			font-family: arial;
+		}
+		
+		.divsecond i{
+			float:right;
+		}
+		
+	    .divthree {
+            display: block;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .img2 {
+            width: 55%;
+            margin-top: 50px;
+        }													
+
+        .inf {
+            display: inline-block;
+            width: 43%;
+            float: right;
+            margin-top: 51px;						;
+			background-color: #f1f1f1;
+			padding:12px;
+        }
+		
+		.inf h2,h3,h4,p{
+			margin:16px;
+		}
+
+        .td {
+            border: 1px solid black;
+            width: 12%;
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+        }
+		
+		.test{
+			display:block;
+			text-align:center;
+			font-size:30px;
+			margin-bottom:50px;
+			margin: 50px;
+		}
+		
+		.bg{
+			background-image: url(img/slider.jpg);
+			width: 1350px;
+			padding: 40px;
+			box-sizing: border-box;
+		}
+		
+		.profile{
+			width:20%;
+			border-radius:50%;
+			float:left;
+		}
+		
+		.part1{
+			width:35%;
+			margin-left:100px;
+			display:inline-block;
+			
+		}
+		
+		
+		.next{
+			background-color:black;
+			color:white;
+			padding:10px;
+			font-size:20px;
+		}
+		
+		.blog{
+			width:1200px;		
+			display:block;
+			margin:0 auto;
+			
+		}
+		
+		.blog p{
+			text-align:justify;
+			width:30%;
+			margin:0;
+			float:left;
+			padding:15px;
+		}
+		
+		
+		.blog-img{
+			width:100%;
+			margin-botom:20px;
+		}
+		
+		.end{
+			
+			width:1200px;
+			
+			
+		}
+		
+		.footer{
+			display:inline-block;
+			width:24%;
+			vertical-align: top;
+		}
+		
+		
+		
+		
+		
+    </style>
+</head>
+
+<body>
+    <div class="meandiv">
+		<div class="inline-block">
+			<span class="left">ENG </span>
+			<span>USD </span>
+			<span>Toll Free:+123 4567 8900 </span>
+			<a class="right" href="" >Wishlist</a>
+			<a href="" >My Account</a>
+			<a href="" >Login</a>
+		</div>
+		<div class="home">
+		
+				<img class="img0"src="img/logo.png"/>
+			<ul>
+				<li>
+					<a href="">home</a>
+				</li>
+				<li>
+					<a href="">about</a>
+				</li>
+				<li>
+					<a href="">shop</a>
+				</li>
+				<li>
+					<a href="">pages</a>
+				</li>
+				<li>
+					<a href="">blog</a>
+				</li>
+				<li>
+					<a href="">contact</a>
+				</li>
+			 </ul>	
+			<div class="button">			
+				<button>
+						search
+				</button>
+				<input type="text" name="search" placeholder="search">
+			 </div>
+		</div>
+		<div class="in-img-width">
+			<img class="mean-img"src="img/img.png"/>
+			<div>
+				<span class="in-img">
+					<h3>NEW PRODUCTE</h3>
+					<h2>MICROSOFT SURFES PRO</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit. Sed eu.
+					</p>
+				</span>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <div class="divfirst">
+            <h1>featured products</h1>
+            <hr class="hr1">
+            <hr class="hr2">
+            <ul class="list">
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Men</a>
+                </li>
+                <li>
+                    <a href="">Women</a>
+                </li>
+                <li>
+                    <a href="">Children</a>
+                </li>
+                <li>
+                    <a href="">Accesorries</a>
+                </li>
+            </ul>
+        </div>
+        <div class="divimg">
+            <div class="divsecond">
+                <img class="img" src="img/img1.png">
+                <a href="" class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img2.png">
+                <a href="" class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img3.png">
+                <a href=""class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img4.png">
+                <a href="" class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img1.png">
+                <a href=""class="divsecond">woolen t.shirt
+										<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img2.png">
+                <a href="" class="divsecond">woolen t.shirt
+										<i>	$99.oo</i>
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img3.png">
+                <a href="" class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+                    
+                </a>
+            </div>
+            <div class="divsecond">
+                <img class="img" src="img/img4.png">
+                <a href="" class="divsecond">woolen t.shirt
+									<i>	$99.oo</i>
+				</a>
+            </div>
+        </div>
+        <div class="divthree">
+            <img class="img2" src="img/laptop.png">
+            <div class="inf">
+                <h3>NEW PRODUCTE</h3>
+                <br>
+                <h2>MICROSOFT SURFES PRO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Sed eu.
+                </p>
+                <h4>LONCHING IN</h4>
+                <div>
+                    <h2 class="td">58 min</h2>
+                    <h2 class="td">60 min</h2>
+                    <h2 class="td">20 min</h2>
+                    <h2 class="td">10 min</h2>
+                </div>
+            </div>
+        </div>
+		<div>
+			<div class="test">
+				<h2>Testimonial</h2>
+				<hr class="hr1">
+				<hr class="hr2">
+		</div>
+			<div class="bg">
+				<div class="part1">
+					<img class="profile" src="img/profile.jpg"/>
+					<h2>SAHINA ALOM</h2>
+					<h4>MICROSOFT SURFES PRO</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Sed eu. Lorem ipsum dolor sit amet,
+					</p>
+				</div>
+				<div class="part1">
+					<img class="profile" src="img/img4.png"/>
+					<h2>SAHISHA PETAR</h2>
+					<h4>MICROSOFT SURFES PRO</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Sed eu. Lorem ipsum dolor sit amet,
+					</p>
+					<div>
+						<button class="next">
+							Next
+						</button>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<h2 class="test">
+						Our Blog
+						<hr class="hr1">
+						<hr class="hr2">
+					</h2>
+				</div>
+				<div class="blog">
+					<p>
+						<img class="blog-img" src="img/blog1.png"/><br>
+						<b>MICROSOFT SURFES PRO</b><br>
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue.
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue.
+						<a href=""> <b>Read More</b></a> </p>
+							
+					<p>		
+						<img class="blog-img" src="img/blog2.png"/><br>
+						<b>MICROSOFT SURFES PRO</b><br>
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue.
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue.
+						<a href=""> <b>Read More</b></a> </p>
+							
+					<p>
+						<img class="blog-img" src="img/blog3.png"/><br>
+						<b>MICROSOFT SURFES PRO</b><br>
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue.
+						Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. 
+						Morbi dictum molestie lobortis. Curabitur pulvinar elit augue.
+						<a href=""> <b>Read More</b></a> </p>
+						
+				</div>
+			</div>
+			
+			<div class="end">
+				<div class="footer">
+					 <img src="img/logo.png"/><br>
+					 <p>Morbi dictum molestie lobortis.Curabitur pulvinar elit augue.
+						Morbi dictum molestie lobortis.</p>
+					
+				
+				</div>
+				<div  class="footer">
+					<h2>CONTACT US<h2>
+					
+					<span>Morbi dictum molestie lobortis.</span>
+					<span>Morbi dictum molestie lobortis.</span>
+					<span>Morbi dictum molestie lobortis.</span>
+					<span>Morbi dictum molestie lobortis.</span>
+				</div>
+				<div  class="footer">
+					<h2>MY ACCOUNT</h2>
+					<span>My Account</span>
+					<span>Wish List</span>
+					<span>My Account</span>
+					<span>Wish List</span>
+				</div>
+				<div  class="footer">
+					<h2>SING UP FOR NEWSLETTER</h2>
+					<input type="text" name="" placeholder="Your Mail">
+					<input type="Sabmit" value="Submit" name="">				
+				
+					<h2>FOLLOW US ON<h2>
+					
+				</div>
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </div>
+
+</body>
+
+</html>
