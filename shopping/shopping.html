@@ -66,8 +66,8 @@
 			float: right;
 		}
 
-		.home input,
-		button {
+		div.home input,
+		div.home button {
 			float: right;
 			border: 1px solid #797171;
 			margin-top: 15px;
@@ -98,18 +98,27 @@
 		}
 
 		.in-img {
-			width: 43%;
-			top: 18%;
-			margin-left: 60px;
 			text-align: justify;
 			font-size: 18px;
-			font-weight: bold;
 			padding: 10px;
+			display: block;
+			font-size: 26px;
+  		    margin: 100px;
 		}
 
+		div.in-img p{
+			float: left;
+			display: block;
+			width: 100%;
+		}
 
+		div .button3 button{
+			font-size: 20px;
+			padding: 10px;
+			margin-top: 30px;
 
-
+		
+		}
 
 
 
@@ -214,8 +223,10 @@
 			padding: 12px;
 		}
 
-		h3, h2, p.inf{
-			margin: 19px;
+		div.inf p,
+	    div.inf h2,
+		div.inf h3{
+			margin: 17px;
 		}
 
 		.td {
@@ -265,6 +276,7 @@
 			color: white;
 			padding: 10px;
 			font-size: 20px;
+			margin-top: 50px;
 		}
 
 		.blog {
@@ -357,14 +369,17 @@
 		<div class="in-img-width">
 			<img class="mean-img" src="img/img.png" />
 			<div class="bg-color">
-				<span class="in-img">
-					<h3>NEW PRODUCTE</h3>
+				<div class="in-img">
+					<h3>2017</h3>
 					<h2>MICROSOFT SURFES PRO</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Sed eu.
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu.<br> Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Sed eu. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 					</p>
-				</span>
+					<div class="button3">
+						<button >VIEW MORE</button>
+						<button>PURCHASE</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -494,10 +509,11 @@
 							elit. Sed eu. Lorem ipsum dolor sit amet,
 						</p>
 					</div>
+					<button class="next">
+						Next
+					</button>
 				</section>
-				<button class="next">
-					Next
-				</button>
+				
 			</div>
 		</div>
 	</div>
