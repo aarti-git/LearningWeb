@@ -13,11 +13,12 @@
 
 		.inline-block {
 			border: 1px solid gray;
-			background-color: #232121;
+			background-color:  #444444;;
 			color: white;
-			width: 100%;
 			display: block;
 			margin: 0 auto;
+			box-sizing:border-box;
+			padding:6px;
 		}
 
 		.inline-block span {
@@ -46,17 +47,26 @@
 			box-sizing: border-box;
 			margin: 6px 100px;
 		}
+		
+		.home{
+			padding:10px;
+		}
 
 		.home li {
 			display: inline-block;
 			padding: 15px;
 			font-size: 20px;
 		}
+		
+		.home li a:hover{
+			color:#e61d1d;
+		}
 
 		.home ul {
 			display: block;
 			text-align: center;
-			width: 1351px;
+			width: 100%;
+			
 
 		}
 
@@ -73,7 +83,11 @@
 			margin-top: 15px;
 			margin-right: 3px;
 			padding: 3px;
-
+		}
+		
+		.button button:hover,
+		.button input:hover{
+			border:2px solid #e61d1d;
 		}
 
 		.mean-img {
@@ -99,10 +113,9 @@
 
 		.in-img {
 			text-align: justify;
-			font-size: 18px;
+			font-size: 23px;
 			padding: 10px;
 			display: block;
-			font-size: 26px;
   		    margin: 100px;
 		}
 
@@ -111,16 +124,109 @@
 			display: block;
 			width: 100%;
 		}
+		
+		div.in-img h3{
+			font-size: 44px;
+			color: #fb0505;
+		}
 
 		div .button3 button{
 			font-size: 20px;
-			padding: 10px;
+			padding: 7px;
 			margin-top: 30px;
-
+		}
 		
+		div .button3 button:hover{
+			background-color:#e61d1d;
+		}
+		
+		#shopping{
+			background: #f1f1f1;
+			padding-bottom:20px;
+			padding-top:20px;
+		}
+		
+		
+		.free-shopping{
+			text-align:center;
+		}
+		
+		.free{
+			display:inline-block;
+			text-align: center;
+			padding: 20px;
+			font-size: 20px;
+			margin-right: 35px;
+		}
+		
+		.free h2:hover{
+			color:#e61d1d;
+		}
+		
+		.srevice-mid{
+			    border-left: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+			
+		}
+		
+		div.free p{
+			font-size:17px;
+			margin-top: 10px;
+		}
+		
+		
+		
+		#shop-now{
+			text-align:center;
+			padding-top: 100px;
+			padding-bottom: 20px;
+		}
+		
+		.newest{
+			display:inline-block;
+			margin: 0 auto;
+		}
+		
+		.newest img{
+			padding:13px;
+		}
+		
+		
+		.shop-now{
+			background: rgba(0,0,0,0.7);
+			width: 345px;
+			margin: 0 auto;
+			padding-bottom: 30px;
+			position:absolute;
+			text-align:center;
+			margin-top: -13%;
+			display:table;
+			margin-left: 25px;
+		}
+		
+		div.shop-now h2,
+		div.shop-now h3{
+			margin:10px;
+			color:white;
+			font-size: 25px
 		}
 
-
+		
+		
+		div.shop-now a{
+			border: 1px solid #fff;
+			border-radius: 4px;
+			padding: 6px 15px;
+			color: white;
+			font-size: 22px;
+			
+		}
+		
+		.shop-now a:hover{
+			background-color:red;
+			border:1px solid #e61d1d;
+			color:black;
+		}
 
 
 
@@ -136,19 +242,19 @@
 			display: block;
 			text-align: center;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding-bottom: 20px;
 		}
 
 		h1 {
-			font-style: normal;
+			font-style: oblique;
 			margin: 50px;
-			font-size: 40px;
+			font-size: 45px;
 			margin-bottom: 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: normal
 		}
 
-		h4 {
-			margin: 10px;
-		}
-
+		
 		.hr1 {
 			width: 150px;
 			height: 1px;
@@ -164,18 +270,24 @@
 			height: 1px;
 			background-color: red;
 			border: 0px;
-			margin-bottom: 30px;
+			margin-bottom: 40px;
+			
 		}
 
 		.list li {
 			display: inline-block;
 			padding: 15px;
 		}
+		
+		.list li a:hover {
+			color: red;
+		}
 
 		.divimg {
-			display: block;
+			display: table;
 			margin: 0 auto;
 			width: 1200px;
+			margin-bottom: 35px;
 		}
 
 		.img {
@@ -183,6 +295,12 @@
 			padding: 10px;
 			box-sizing: border-box;
 			float: left;
+		}
+		
+		
+		.img:hover{
+			
+			
 		}
 
 		div.divsecond {
@@ -221,28 +339,30 @@
 			margin-top: 51px;
 			background-color: #f1f1f1;
 			padding: 12px;
+			padding-top: 9px;
 		}
 
 		div.inf p,
 	    div.inf h2,
-		div.inf h3{
-			margin: 17px;
+		div.inf h3,
+		div.inf h4{
+			margin: 16px;
 		}
 
 		.td {
 			border: 1px solid black;
-			width: 12%;
+			width: 11%;
 			display: inline-block;
 			margin: 15px;
 			text-align: center;
 		}
+		
 
 		.test {
 			display: block;
 			text-align: center;
-			font-size: 30px;
 			margin-bottom: 50px;
-			margin: 50px;
+			margin-top: 90px;
 		}
 
 		.bg {
@@ -255,35 +375,69 @@
 			width: 20%;
 			border-radius: 50%;
 			float: left;
+			margin-right: 15px;
+			
 		}
 
 		.section {
 			padding: 50px;
 			background-color: rgba(0,0,0,.7);
 			color: #d2d2d2;
+			padding-top: 80px;
+			padding-bottom: 60px;
 		}
 
 		.part1 {
-			width: 35%;
+			width: 40%;
 			margin-left: 100px;
 			display: inline-block;
-
+			
+		}
+		
+		.part1 h3{
+			font-size: 20px;
+			text-transform: capitalize;
+			font-style: oblique;
+			text-align: right;
+			color: #fff;
+			padding: 5px;
+		}
+		
+		div.part1 p{
+			margin:10px;
 		}
 
 
 		.next {
 			background-color: black;
 			color: white;
-			padding: 10px;
+			padding: 5px 18px;
 			font-size: 20px;
-			margin-top: 50px;
+			display: block;
+			margin: 0 auto;
+			border: 1px solid #5d5858;
+			margin-top: 30px;
+		}
+		
+		.next:hover{
+			background-color:#e61d1d;
+			color:black;
 		}
 
 		.blog {
 			width: 1200px;
 			display: table;
 			margin: 0 auto;
-
+			margin-bottom: 50px;
+		}
+		
+		.blog a:hover{
+			color:#e61d1d;
+		}
+		
+		.blog a{
+			display: block;
+			font-size: 23px;
 		}
 
 		.blog p {
@@ -297,32 +451,92 @@
 
 		.blog-img {
 			width: 100%;
+			margin-bottom: 10px;
 		}
+		
 
 		.end {
-
 			width: 1300px;
 			margin: 0 auto;
 			display: table;
+			font-family: 'Raleway', sans-serif;
 		}
 
 		.section1{
-			background-color: dimgrey;
-					}
+			background-color: #353535;;
+			color:  #dad2d2;
+			padding-top:60px;
+			padding-bottom:30px;
+			margin-top: 80px;
+		}
 
 		.footer {
 			display: inline-block;
 			width: 23%;
 			vertical-align: top;
-			padding: 12px;
+			padding: 20px;
 			font-size: 12px;
+		}
+		
+		div.footer p{
+			font-size:16px;
+			padding:10px;
+		}
+		
+		div.footer li{
+			font-size:17px;
+			font-weight:normal;
+			padding:10px;
+		}
+		
+		div.footer a,
+		div.footer-btm a{
+			color: #ec227a;;
+		}
+		
+		div.footer h2{
+			margin-bottom:30px;
+		}
+		
+		div.footer img{
+			margin-bottom: 23px;
+			width: 50%
 		}
 
 		.footer input{
 			border: 1px solid gray;
-			padding: 4px;
-
+			padding: 8px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			color: red;
 		}
+		
+		.footer input:hover{
+			border:2px solid #e61d1d;
+			
+		}
+		
+		.footer li:hover{
+			color:#e61d1d;
+			border:2px solid #353535;;
+		}
+		
+		.footer-btm{
+			background: #555555;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+		div.footer-btm p{
+			display:inline-block;
+			margin-left: 100px;
+		}
+		
+		div.footer-btm img{
+			float:right;
+			margin-right:13px;
+		}
+		
 	</style>
 </head>
 
@@ -382,15 +596,59 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
+		<section id="shopping">
+			<div class="free-shopping">
+				<div class="free">
+					<h2>Free Shopping</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+				</div>
+				<div  class="free srevice-mid">
+					<h2>24/7 Support</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+				</div>
+				<div  class="free">
+					<h2>Cashback</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+				</div>
+		</section>
+		
+		
+		</div>
+		
+		
+		
+		
+		<div id="shop-now">
+			<div class="newest">
+				<img src="img/newest1.jpg"/>
+				
+				<div class="shop-now">
+					<h2>EWN</h2>
+					<h3>jeans shirt</h3>
+					<a href="">shop now</a>
+				</div>
+			</div>
+				
+			<div class="newest">
+				<img src="img/newest2.jpg"/>
+				<div class="shop-now">
+					<h2>EWN</h2>
+					<h3>jeans shirt</h3>
+					<a href="">shop now</a>
+				</div>
+			</div>
+				
+			<div class="newest">
+				<img src="img/newest3.jpg"/>
+				<div class="shop-now">
+					<h2>EWN</h2>
+					<h3>jeans shirt</h3>
+					<a href="">shop now</a>
+				</div>
+			</div>	
+			
+				
+		</div>
 
 
 		<div class="divfirst">
@@ -418,56 +676,57 @@
 		<div class="divimg">
 			<div class="divsecond">
 				<img class="img" src="img/img1.png">
+				
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img2.png">
+				<img class="img" src="img/img2.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img3.png">
+				<img class="img" src="img/img3.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img4.png">
+				<img class="img" src="img/img4.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img1.png">
+				<img class="img" src="img/img1.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img2.png">
+				<img class="img" src="img/img2.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img3.png">
+				<img class="img" src="img/img3.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 
 				</a>
 			</div>
 			<div class="divsecond">
-				<img class="img" src="img/img4.png">
+				<img class="img" src="img/img4.png"/>
 				<a href="" class="divsecond">woolen t.shirt
 					<i> $99.oo</i>
 				</a>
 			</div>
 		</div>
 		<div class="divthree">
-			<img class="img2" src="img/laptop.png">
+			<img class="img2" src="img/laptop.png"/>
 			<div class="inf">
 				<h3>NEW PRODUCTE</h3>
 				<br>
@@ -478,16 +737,54 @@
 				</p>
 				<h4>LONCHING IN</h4>
 				<div>
-					<h2 class="td">58 min</h2>
-					<h2 class="td">60 min</h2>
+					<h2 class="td">56 day</h2>
+					<h2 class="td">21 hours</h2>
 					<h2 class="td">20 min</h2>
-					<h2 class="td">10 min</h2>
+					<h2 class="td">10 sec</h2>
 				</div>
 			</div>
 		</div>
 		<div>
+			<div>
+				<div  class="test">
+					<h1>
+						Latest Productes
+						<hr class="hr1">
+						<hr class="hr2">
+					</h1>
+				</div>
+				<div class="divimg">
+					<div class="divsecond">
+						<img class="img" src="img/latest1.jpg"/>
+						<a href="" class="divsecond">samsung
+							<i> $99.oo</i>
+						</a>
+					</div>
+					<div  class="divsecond">
+						<img class="img" src="img/latest2.jpg"/>
+						<a href="" class="divsecond">apple
+							<i> $99.oo</i>
+						</a>
+					</div class="divsecond">
+					<div  class="divsecond">
+						<img class="img" src="img/latest3.jpg"/>
+						<a href="" class="divsecond">micromax
+							<i> $99.oo</i>
+						</a>
+					</div>
+					<div  class="divsecond">
+						<img class="img" src="img/latest4.jpg"/>
+						<a href="" class="divsecond">vivo
+							<i> $99.oo</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div>
 			<div class="test">
-				<h2>Testimonial</h2>
+				<h1>Testimonial</h1>
 				<hr class="hr1">
 				<hr class="hr2">
 			</div>
@@ -498,16 +795,18 @@
 						<h2>SAHINA ALOM</h2>
 						<h4>MICROSOFT SURFES PRO</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Sed eu. Lorem ipsum dolor sit amet,
+							elit. Sed eu. Lorem ipsum dolor sit amet.
 						</p>
+						<h3>Sahina Alom</h3>
 					</div>
 					<div class="part1">
 						<img class="profile" src="img/img4.png" />
 						<h2>SAHISHA PETAR</h2>
 						<h4>MICROSOFT SURFES PRO</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Sed eu. Lorem ipsum dolor sit amet,
+							elit. Sed eu. Lorem ipsum dolor sit amet.
 						</p>
+						<h3> Sahisha Petar</h3>
 					</div>
 					<button class="next">
 						Next
@@ -519,18 +818,20 @@
 	</div>
 	<div>
 		<div>
-			<h2 class="test">
+			<h1 class="test">
 				Our Blog
 				<hr class="hr1">
 				<hr class="hr2">
-			</h2>
+			</h1>
 		</div>
 		<div class="blog">
 			<p>
 				<img class="blog-img" src="img/blog1.png" />
 				<br>
 				<b>MICROSOFT SURFES PRO</b>
-				<br> Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
+				<br>
+				<br>
+				&nbsp &nbsp &nbsp Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
 				augue. Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. Morbi dictum molestie lobortis. Curabitur pulvinar
 				elit augue.
 				<a href="">
@@ -542,7 +843,10 @@
 				<img class="blog-img" src="img/blog2.png" />
 				<br>
 				<b>MICROSOFT SURFES PRO</b>
-				<br> Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
+				<br>
+				<br>
+				
+				&nbsp &nbsp &nbsp Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
 				augue. Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. Morbi dictum molestie lobortis. Curabitur pulvinar
 				elit augue.
 				<a href="">
@@ -554,7 +858,9 @@
 				<img class="blog-img" src="img/blog3.png" />
 				<br>
 				<b>MICROSOFT SURFES PRO</b>
-				<br> Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
+				<br>
+				<br>
+				&nbsp &nbsp &nbsp Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.Curabitur pulvinar elit
 				augue. Morbi dictum molestie lobortis. Curabitur pulvinar elit augue. Morbi dictum molestie lobortis. Curabitur pulvinar
 				elit augue.
 				<a href="">
@@ -570,6 +876,7 @@
 			<div class="footer">
 				<img src="img/logo.png" />
 				<br>
+				<p>Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.</p>
 				<p>Morbi dictum molestie lobortis.Curabitur pulvinar elit augue. Morbi dictum molestie lobortis.</p>
 
 
@@ -600,7 +907,7 @@
 						</li>
 				</ul>
 			</div>
-			<div class="footer">
+			<div class="footer" style="margin-left: -80px;">
 				<h2>SING UP FOR NEWSLETTER</h2>
 				<input type="text" name="" placeholder="Your Mail">
 				<input type="submit" value="submit" >
@@ -608,8 +915,19 @@
 				<h2>FOLLOW US ON<h2>
 
 			</div>
-		</section>
-
+	</section>
+		
+			<div class="footer-btm">
+				<p>
+					Copyright 2017.Allright reserved by
+					<a href="">E-FERI</a>
+				</p>
+				
+					<img src="img/card1.png"/>
+					<img src="img/card2.png"/>
+					<img src="img/card3.png"/>
+					<img src="img/card4.png"/>
+			</div>
 
 
 
