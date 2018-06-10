@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>blog-page</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css">
+			.camande-blog{
+				width: 1200px;
+				margin: 0 auto;
+				display: block;
+				margin-top: 100px;
+			}
+			
+			.camande-blog1{
+				width:390px;
+				display:inline-block;
+				font-family: 'Raleway', sans-serif;
+			}
+			
+			.camand-blog2{
+				width:750px;
+				display:inline-block;
+				font-family: 'Raleway', sans-serif;
+				float: right;
+			}
+			
+			.chiled1 {
+				display: block;
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				background-image: url(img/about-bg.jpg);
+				width:100%;
+				padding: 66px 0 66px 0;
+				color: #fff;
+				box-sizing: border-box;
+			
+			}
+
+			.chiled h2 {
+				margin-bottom: 30px;
+			}
+
+			.chiled1 span {
+				color: red;
+			}
+			
+
+			.div-blog input{
+				border:1px solid gray;
+				padding: 12px 200px 12px 0px;
+			}
+			
+			.pull-right{
+				float:right;
+			}
+			
+			.div-blog h2{
+				font-weight: normal;
+			}
+			
+			.div-blog li{
+				color: #444444;
+				font-size: 14px;
+				text-transform: capitalize;
+				display: block;
+				padding: 15px;
+			}
+			
+			.div-blog a:hover{
+				color:#e61d1d;
+			}
+			
+			.div-blog a{
+				font-size:18px;
+				color:#6d6a6a;
+				text-decoration: none;
+			}
+			
+			.div-blog h2{
+				padding: 33px 0 15px 0;
+			}
+			
+			.step-2{
+				margin-top:60px;
+			}
+			
+			.step-2 h2:hover{
+				color:#e61d1d;
+			}
+			
+			.step-2 h2{
+				display:inline-block;
+				padding: 15px 14px 15px 0px;
+				font-weight: normal;
+			}
+			
+			.step-2 hr{
+				border: 1px dashed #3a353544;
+				font-size: 22px;
+			}
+
+			.blog-img{
+				width:100px;
+			}
+			
+			.blog-reviwe{
+				margin: 40px 0 40px 0;
+			}
+			
+			.blog-reviwe:hover{
+				color:#e61d1d;
+			}
+			
+			.grouping-2 h3{
+				padding-bottom:40px;
+				font-size:15px;
+			}
+			
+			.grouping-2{
+				display:inline-block;
+				vertical-align: top;
+				padding-left: 35px;
+			}
+			
+			.video-img{
+				width: 390px;
+			}
+			
+			.tags h2{
+				margin-top: 45px;
+				font-weight: normal;
+			}
+			
+			.tags a:hover{
+				color:#e61d1d;
+				border:1px solid #e61d1d;
+			}
+			
+			.tags a{
+				text-decoration: none;
+				padding: 8px;
+				font-size: 15px;
+				border: 1px solid darkgrey;
+				margin: 12px;
+				color:  #444444;
+			}
+			
+			.tags p{
+				margin: 50px 0 0px 0;
+			}
+			
+			#blog-img{
+				width:750px;
+			}
+			
+			.blog-inf p{
+				text-align: justify;
+				line-height: 27px;
+				margin: 25px 0 25px 0;
+				font-size: 15px;
+			}
+			.blog-inf h4{
+				background: #f1f1f1;
+				padding: 20px;
+				font-weight: normal;
+				font-size: 17px;
+				border-left: 2px solid red;
+			}
+			.comment h3{
+				margin-top:50px;
+				font-weight:normal;
+			}
+			
+			#comment-section{
+				width: 555px;
+				display: inline-block;
+				margin-bottom: 80px;
+				vertical-align: top;
+			}
+			
+			#comment-section h5{
+				display:inline-block;
+			}
+			
+			#comment-section h6{
+				float:right;
+			}
+			
+			#comment-section p{
+				margin-top:18px;
+				font-size:14px;
+			}
+			
+			#replay{
+				float:right;
+			}
+			
+			#comment-section i{
+				margin-top: 13px;
+				float: left;
+				border: 1px solid lightgray;
+				font-size: 14px;
+				background-color: gainsboro;
+			}
+			
+			.div-input input:hover{
+				border:2px solid #e61d1d;
+			}
+			
+			.reply-input{
+				border:1px solid gray;
+				padding: 12px 180px 12px 0px;
+				margin: 10px 25px 20px 0px;
+			}
+			
+			.input-sabmit{
+				display: block;
+				text-align: center;
+				width: 100%;
+				background-color: #f93f3f;
+				font-size: 22px;
+				border: 1px solid black;
+				padding: 7px;
+				color: #f9e8e8;
+			}
+		</style>
+	</head>
+	
+<body>
+	<iframe class="header_include" src="header.html"></iframe>
+	<div>
+		<div class="chiled1">
+				<h2>BLOG DETAILS</h2>
+				<h3>HOME > >
+					<span>Blog Details</span>
+				</h3>
+		</div>
+		<div class="camande-blog">
+			<div class="camande-blog1">	
+				<div class="div-blog">
+					<input type="text" name="" placeholder=" Type Your Keywords">
+					<h2>CATEGORIS</h2>
+					<ul>
+						<li>
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+						<li> 
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+						<li>
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+						<li>
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+						<li>
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+						<li>
+							<a href="">Fashion Beauty
+								<span class="pull-right">13</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="step-2 ">
+					<hr>
+						<h2>POPULAR<h2>
+						<h2>RECENT</h2>
+						<h2>LATEST</h2>
+					<hr>
+					<div class="blog-reviwe">
+					<img class="blog-img" src="img/profile.jpg"/>
+						<div class="grouping-2">
+							<h3>Best E-Commerce Ever ,You’ll<br> Be Apriciate</h3>
+							<span>
+								3.5k likes &nbsp &nbsp   2.2 comments
+							</span>
+						</div>
+					</div>
+					
+					<hr>
+					<div class="blog-reviwe">
+						<img class="blog-img" src="img/profile2.jpg"/>
+						<div class="grouping-2">
+							<h3>Best E-Commerce Ever , You’ll<br> Be Apriciate</h3>
+							<span>
+								2.5k likes &nbsp &nbsp 1.2 comments
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--second div-->
+				<div>
+					<a href="https://www.youtube.com/embed/lSbC5ojuh7Q">
+						<img class="video-img" src="img/video.png"/>
+					</a>
+				</div>
+				<div class="tags">
+					<h2>TAGS</h2>
+					<p> 
+						<a href="#">fashion</a>
+						<a href="#">Furniture</a>
+						<a href="#">Sports</a>
+						<a href="#">Health</a>
+					</p>
+					<p> 
+						<a href="#">fashion</a>
+						<a href="#">Furniture</a>
+						<a href="#">Sports</a>
+						<a href="#">Health</a>
+					</p>
+				</div>
+			</div>
+			<!-- second part-->
+			<div class="camand-blog2">
+				<div class="blog-inf">
+					<img id="blog-img" src="img/blog-img.jpg"/>
+					<h3>Finding New Buildings in the Dust of the Old Never Seen Before</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					</p>
+							
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+					</p>
+					
+					<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					text ever since the 1500s,when an unknown printer took a galley.</h4>
+					
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					</p>
+				</div>
+				<div class="comment">
+					<h3>14 COMMENTS</h3>
+					<div>
+						<img src="img/comment-img1.jpg"/>
+						<div id="comment-section">
+							<h5>Mahadi Tahsan</h5>
+							<h6>Posted On: 26 October 2017</h6>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+								Lorem Ipsum is simply.</p>	
+							<i>Replay</i>
+						</div>
+						<div id="replay">
+							<img src="img/comment-img2.jpg"/>
+							<div id="comment-section">
+								<h5>Mahadi Tahsan</h5>
+								<h6>Posted On: 26 October 2017</h6>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+									Lorem Ipsum is simply.</p>
+								<i>Replay</i>
+							</div>
+						</div>
+						<hr>
+						<img src="img/comment-img3.jpg"/>
+						<div id="comment-section">
+							<h5>Mahadi Tahsan</h5>
+							<h6>Posted On: 26 October 2017</h6>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+								Lorem Ipsum is simply.</p>	
+							<i>Replay</i>
+						</div>
+					</div>
+				</div>
+				<div class="div-input">
+					<h3>Leave a reply</h3>
+					<input class="reply-input" type="text" name="" placeholder=" Name ">
+					<input class="reply-input" type="text" name="" placeholder= " Email Address ">
+					<textarea class="reply-input" rows="3" style="resize:none" required placeholder= " Messege "></textarea>
+					<input class="reply-input input-sabmit" type="sabmit" value="submit" >
+				</div>
+			</div>
+		</div>
+	</div>
+	<iframe class="footer_include" src="footer.html"></iframe>
+</body>
+</html>

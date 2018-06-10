@@ -5,13 +5,21 @@
     <title>product-page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style type="text/css">
-        .chiled1 {
+		.camande-11{
+			width:90%;
+			margin:100px 0 0 50px ;
+		}
+	
+		.chiled1 {
             display: block;
             text-align: center;
             font-family: 'Raleway', sans-serif;
             background-image: url(img/about-bg.jpg);
-            padding: 70px;
+			width:100%;
+		    padding: 66px 0 66px 0;
             color: #fff;
+			box-sizing: border-box;
+			
         }
 
         .chiled h2 {
@@ -21,18 +29,139 @@
         .chiled1 span {
             color: red;
         }
+		
+		.center-page{
+			width:1270px;
+			display:block;
+			margin:0 auto;
+		}
+		
+		.img-parent{
+			display:inline-block;
+			margin-right:25px;
+		}
+		
+		.img-pro{
+			width: 450px;
+			box-shadow: 0px 0px 10px;
+		}
+		
+		#img-group3{
+			padding:5px;
+		}
+	
+		.img-group3{
+			width:145px;
+			border: 1px solid #9e9696;
+		}
+		
+		
+		.parent{
+			display: inline-block;
+			vertical-align:top;
+		}
+		
+		.product-inf{
+			display: inline-block;
+			padding: 10px;
+			font-size: 16px;
+			font-family: 'Raleway', sans-serif;
+			color: #444444;
+			vertical-align: top;
+			font-weight: 400;
+			line-height: 42px;
+			
+		}
+		
+		.product-inf h4{
+		   margin: 18px 0 25px 0;
+		}
+		
+		.product-inf h3{
+			font-size:25px;
+		}
+		
+		.product-inf p{
+			margin-bottom: 35px;
+			text-align: justify;
+			font-family: 'Open Sans', sans-serif;
+			color: #444444;
+			font-weight: 400;
+			line-height: 24px;
+		}
+		
+		
+		#text1{
+			border:1px solid black;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+		}
+		
+		
+		.button-group button{
+			width: 23px;
+			padding: 0px;
+			vertical-align: middle;
+			border: 1px solid black;
+			background-color: white;
+			font-size:16px;
+		}
+		
+		.row{
+			display:block;
+		}
+		
+		.button-group{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.button-group button:hover,
+		#share-link:hover{
+			background-color:red;
+		}
+		
+		#share-link{
+			border-radius: 50%;
+			font-weight: bold;
+			margin: 15px 12px;
+			padding: 5px;
+			font-size: 22px;
+			font-family: -webkit-body;
+			background-color: white;
+			border: 1px solid black;
+			width: 40px;
+			height: 40px;
+		}
 
-        .img{
-            width: 30%;
-            margin: 75px;
-            margin-right: 22px;
-        }
-
-        .product-inf{
-            display: inline-block;
-            margin-top: 75px;
-            padding:18px;
-        }
+        
+		
+		.product-inf-tops{
+			width: 1000px;
+			margin: 50px 0 20px 50px;
+		}
+		
+		.product-inf-tops p{
+			text-align:justify;
+			margin-top:23px;
+			font-family: 'Open Sans', sans-serif;
+			color: #444444;
+			font-weight: 400;
+			line-height: 27px;
+		}
+		
+		hr{
+			border: 1px dashed #3a353544;
+			margin: 10px;
+			font-size: 22px;
+		}
+		
+		.product-inf-tops span{
+			color:red;
+		}
+		
+		
     </style>
 </head>
 
@@ -45,21 +174,78 @@
                 <span>Product Details</span>
             </h3>
         </div>
-        <div> 
-             <img class="img" src="img/img3.png"/>
-             <div class="product-inf">
-                <h2>MICROSOFT SURFES PRO</h2>
-                <h3>$ 99.00</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu.
-                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed eu. Lorem ipsum dolor sit amet,
-                    <br> consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, 
-                    <br>consectetur adipiscing
-                    elit. Sed eu.
-                </p>
-            </div>
-        </div>
+		<div class="center-page">
+			<div class="camande-11">
+					<div class="img-parent">
+						<img class="img-pro" src="img/img2.png"/>
+						<div id="img-group3">
+							<img class="img-group3" src="img/img2.png"/>
+							<img class="img-group3" src="img/img3.png"/>
+							<img class="img-group3" src="img/img4.png"/>
+						</div>
+					</div>
+					<div class="parent">
+						<div class="product-inf">
+							<h3>Westan tops</h3>
+							<h4>$ 99.00</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit.
+								<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit.
+								<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit. 
+								<br>Lorem ipsum dolor sit amet,consectetur adipiscing elit.consectetur adipiscing elit.
+								<br>elit adipiscing Sed eu.
+							</p>
+							<span class="row">
+								color : <input id="checkbox" type="checkbox"></input>  chocolet
+							</span>
+							<span  class="row">
+								size : <input id="checkbox" type="checkbox"></input>  small
+							</span>
+							<span  class="row">
+								Quantity : <input id="text1" type="text" value="1"></input>
+								<div class="button-group">
+									<button > + </button><br>
+									<button> - </button>
+								</div>
+							</span>
+							<span class="row">
+								code :  sky-12345678
+							</span>
+							<span class="row">
+								category :  Eashion
+							</span>
+							<span class="row">
+								tags :  T-shirt,skirt
+							</span>
+							<span class="row">
+								share  : 
+								<div>
+									<button id="share-link">f</button>
+									<button id="share-link">Be</button>
+									<button id="share-link">in</button>
+									<button id="share-link">P</button>
+								</div>
+							</span>
+						</div>
+					</div>
+				</div>	
+				<div class="product-inf-tops">
+					<hr>
+					<h3><span>Description</span> / Review</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Sed </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu. Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Sed </p>
+				</div>
+		</div>
+				
+			
+	</div>
     <iframe class="footer_include" src="footer.html"></iframe>    
 </body>
 
