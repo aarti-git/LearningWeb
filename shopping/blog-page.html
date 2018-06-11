@@ -3,6 +3,7 @@
 	<head>
 		<title>blog-page</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 		<style type="text/css">
 			.camande-blog{
 				width: 1200px;
@@ -48,6 +49,7 @@
 			.div-blog input{
 				border:1px solid gray;
 				padding: 12px 200px 12px 0px;
+				font-size: 16px;
 			}
 			
 			.pull-right{
@@ -152,6 +154,13 @@
 			#blog-img{
 				width:750px;
 			}
+
+			#font-fa{
+				float:right;
+			}
+			.blog-inf h3{
+				margin-bottom: 13px;
+			}
 			
 			.blog-inf p{
 				text-align: justify;
@@ -191,7 +200,7 @@
 				font-size:14px;
 			}
 			
-			#replay{
+			#reply{
 				float:right;
 			}
 			
@@ -223,6 +232,7 @@
 				padding: 7px;
 				color: #f9e8e8;
 			}
+
 		</style>
 	</head>
 	
@@ -321,6 +331,12 @@
 				<div class="blog-inf">
 					<img id="blog-img" src="img/blog-img.jpg"/>
 					<h3>Finding New Buildings in the Dust of the Old Never Seen Before</h3>
+					<h5 class="fa fa-user">by Admin</h5>
+					<div id="font-fa">
+						<h5 class="fa fa-user">2.5k likes</h5>
+						<h5 class="fa fa-comments">comment</h5>
+					</div>
+					
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
@@ -355,16 +371,16 @@
 							<h6>Posted On: 26 October 2017</h6>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 								Lorem Ipsum is simply.</p>	
-							<i>Replay</i>
+							<i class="fa fa-reply-all">Reply</i>
 						</div>
-						<div id="replay">
+						<div id="reply">
 							<img src="img/comment-img2.jpg"/>
 							<div id="comment-section">
 								<h5>Mahadi Tahsan</h5>
 								<h6>Posted On: 26 October 2017</h6>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 									Lorem Ipsum is simply.</p>
-								<i>Replay</i>
+								<i class="fa fa-reply-all">Reply</i>
 							</div>
 						</div>
 						<hr>
@@ -374,7 +390,7 @@
 							<h6>Posted On: 26 October 2017</h6>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 								Lorem Ipsum is simply.</p>	
-							<i>Replay</i>
+							<i class="fa fa-reply-all"> Reply</i>
 						</div>
 					</div>
 				</div>
