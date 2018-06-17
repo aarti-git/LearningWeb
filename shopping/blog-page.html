@@ -48,7 +48,7 @@
 
 			.div-blog input{
 				border:1px solid gray;
-				padding: 12px 200px 12px 0px;
+				padding: 12px 200px 12px 5px;
 				font-size: 16px;
 			}
 			
@@ -124,9 +124,34 @@
 				padding-left: 35px;
 			}
 			
+			.overlay-relativ{
+				
+			}
+			
+			.overlay-video{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.6);
+				display: none;
+			}
+			
+			.overlay-video iframe{
+				display:block;
+				margin:0 auto;
+				margin-top:200px;
+				position:relative;
+				max-width:560px;
+				
+			}
+			
 			.video-img{
 				width: 390px;
+				max-width:100%;
 			}
+			
 			
 			.tags h2{
 				margin-top: 45px;
@@ -213,12 +238,12 @@
 			}
 			
 			.div-input input:hover{
-				border:2px solid #e61d1d;
+				border:1px solid #e61d1d;
 			}
 			
 			.reply-input{
 				border:1px solid gray;
-				padding: 12px 180px 12px 0px;
+				padding: 12px 180px 12px 5px;
 				margin: 10px 25px 20px 0px;
 			}
 			
@@ -288,7 +313,8 @@
 						<div class="grouping-2">
 							<h3>Best E-Commerce Ever ,You’ll<br> Be Apriciate</h3>
 							<span>
-								3.5k likes &nbsp &nbsp   2.2 comments
+								<span class="fa fa-thumbs-up"> 3.5k likes<span> &nbsp &nbsp 
+								<span class="fa fa-comments">  2.2 comments</span>
 							</span>
 						</div>
 					</div>
@@ -299,17 +325,41 @@
 						<div class="grouping-2">
 							<h3>Best E-Commerce Ever , You’ll<br> Be Apriciate</h3>
 							<span>
-								2.5k likes &nbsp &nbsp 1.2 comments
+								<span class="fa fa-thumbs-up"> 1.2k likes<span> &nbsp &nbsp 
+								<span class="fa fa-comments">  2.2 comments</span>
 							</span>
 						</div>
 					</div>
 				</div>
 				<!--second div-->
-				<div>
-					<a href="https://www.youtube.com/embed/lSbC5ojuh7Q">
-						<img class="video-img" src="img/video.png"/>
-					</a>
+				<div class="overlay-relativ">
+					<div>
+						<a>
+							<img class="video-img" onclick="openOverlay()" src="img/video.png"/>
+						</a>
+					</div>
+					
+					<div class="overlay-video" onclick="closeOverlay()">
+						<a>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/lSbC5ojuh7Q"
+							frameborder="0" allow="autoplay; encrypted-media"></iframe>
+						</a>
+					</div>
 				</div>
+				
+				<script>
+					function openOverlay(){
+						var a = document.querySelector('.overlay-video');
+						a.style.display = 'block';
+					}
+					
+					function closeOverlay(){
+						var a = document.querySelector('');
+						a.style.display = 'none';
+					}
+						
+				</script>
+				
 				<div class="tags">
 					<h2>TAGS</h2>
 					<p> 
@@ -399,11 +449,12 @@
 					<input class="reply-input" type="text" name="" placeholder=" Name ">
 					<input class="reply-input" type="text" name="" placeholder= " Email Address ">
 					<textarea class="reply-input" rows="3" style="resize:none" required placeholder= " Messege "></textarea>
-					<input class="reply-input input-sabmit" type="sabmit" value="submit" >
+					<input class="input-sabmit" type="sabmit" value="submit">
 				</div>
 			</div>
 		</div>
 	</div>
 	<iframe class="footer_include" src="footer.html"></iframe>
+	
 </body>
 </html>
