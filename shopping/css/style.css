@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 .header_include,
 .footer_include {
     width: 100%;
