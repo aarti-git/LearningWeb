@@ -34,7 +34,6 @@
 				padding: 66px 0 66px 0;
 				color: #fff;
 				box-sizing: border-box;
-			
 			}
 
 			.chiled h2 {
@@ -45,11 +44,22 @@
 				color: red;
 			}
 			
-
+			.blog-input-search{
+				position:relativ;
+			}
+			
 			.div-blog input{
-				border:1px solid gray;
-				padding: 12px 200px 12px 5px;
+				border: 1px solid gray;
+				padding: 10px 185px 10px 10px;
 				font-size: 16px;
+				border-radius: 30px;
+			}
+			
+			.div-blog i{
+				position: relative;
+				float: right;
+				top: -28px;
+				left: -18px;
 			}
 			
 			.pull-right{
@@ -109,7 +119,7 @@
 				margin: 40px 0 40px 0;
 			}
 			
-			.blog-reviwe:hover{
+			.grouping-2 h3:hover{
 				color:#e61d1d;
 			}
 			
@@ -118,14 +128,18 @@
 				font-size:15px;
 			}
 			
+			.grouping-2 a:hover{
+				color:#e61d1d;
+			}
+			
+			.grouping-2 i{
+				color:black;
+			}
+			
 			.grouping-2{
 				display:inline-block;
 				vertical-align: top;
 				padding-left: 35px;
-			}
-			
-			.overlay-relativ{
-				
 			}
 			
 			.overlay-video{
@@ -257,6 +271,10 @@
 				padding: 7px;
 				color: #f9e8e8;
 			}
+			
+			#sabmit{
+				text-decoration: none;
+			}
 
 		</style>
 	</head>
@@ -273,7 +291,10 @@
 		<div class="camande-blog">
 			<div class="camande-blog1">	
 				<div class="div-blog">
-					<input type="text" name="" placeholder=" Type Your Keywords">
+					<div class="blog-input-search">
+						<input type="text" name="" placeholder=" Type Your Keywords">
+						<i><a href="" class="fas fa-search"></a></i>
+					</div>
 					<h2>CATEGORIS</h2>
 					<ul>
 						<li>
@@ -313,8 +334,8 @@
 						<div class="grouping-2">
 							<h3>Best E-Commerce Ever ,You’ll<br> Be Apriciate</h3>
 							<span>
-								<span class="fa fa-thumbs-up"> 3.5k likes<span> &nbsp &nbsp 
-								<span class="fa fa-comments">  2.2 comments</span>
+								<a href="" class="fa fa-thumbs-up"><i> 3.5k likes</i></a> &nbsp &nbsp 
+								<a href=""  class="fa fa-comments"><i> 2.2 comments</i></a>
 							</span>
 						</div>
 					</div>
@@ -325,8 +346,8 @@
 						<div class="grouping-2">
 							<h3>Best E-Commerce Ever , You’ll<br> Be Apriciate</h3>
 							<span>
-								<span class="fa fa-thumbs-up"> 1.2k likes<span> &nbsp &nbsp 
-								<span class="fa fa-comments">  2.2 comments</span>
+								<a href="" class="fa fa-thumbs-up"><i> 1.2k likes</i></a> &nbsp &nbsp 
+								<a href="" class="fa fa-comments"><i>  2.2 comments</i></a>
 							</span>
 						</div>
 					</div>
@@ -381,13 +402,13 @@
 				<div class="blog-inf">
 					<img id="blog-img" src="img/blog-img.jpg"/>
 					<h3>Finding New Buildings in the Dust of the Old Never Seen Before</h3>
-					<h5 class="fa fa-user">by Admin</h5>
+					<h5 class="fa fa-user"> by Admin </h5>
 					<div id="font-fa">
-						<h5 class="fa fa-user">2.5k likes</h5>
-						<h5 class="fa fa-comments">comment</h5>
+						<h5 class="fa fa-user"> 2.5k likes </h5>
+						<h5 class="fa fa-comments"> comment </h5>
 					</div>
 					
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					<p> &nbsp &nbsp &nbsp Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
@@ -395,7 +416,7 @@
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 					</p>
 							
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					<p> &nbsp &nbsp &nbspLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -404,7 +425,7 @@
 					<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 					text ever since the 1500s,when an unknown printer took a galley.</h4>
 					
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
+					<p> &nbsp &nbsp &nbspLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy 
@@ -449,7 +470,9 @@
 					<input class="reply-input" type="text" name="" placeholder=" Name ">
 					<input class="reply-input" type="text" name="" placeholder= " Email Address ">
 					<textarea class="reply-input" rows="3" style="resize:none" required placeholder= " Messege "></textarea>
-					<input class="input-sabmit" type="sabmit" value="submit">
+					<a id="sabmit" href="" >
+						<input class="input-sabmit" type="button" value="submit" name="">
+					</a>
 				</div>
 			</div>
 		</div>

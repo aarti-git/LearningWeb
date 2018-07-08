@@ -9,6 +9,10 @@
     outline: none;
 }
 
+*{
+	text-decoration:none;
+}
+
 .header_include,
 .footer_include {
     width: 100%;
@@ -78,6 +82,8 @@
     display: block;
     text-align: center;
     width: 100%;
+	position: relative;
+    left: -120px;
 }
 
 .button {
@@ -92,7 +98,7 @@ div.home button {
     border: 1px solid #797171;
     margin-top: 15px;
     margin-right: 3px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .button button:hover,
@@ -455,7 +461,7 @@ div.part1 p {
 
 .footer {
     display: inline-block;
-    width: 23%;
+    width: 25%;
     vertical-align: top;
     padding: 20px;
     font-size: 12px;
@@ -475,7 +481,7 @@ div.footer li {
 div.footer a,
 div.footer-btm a {
     color: #ec227a;
-    ;
+	text-decoration: none;
 }
 
 div.footer h2 {
@@ -506,19 +512,14 @@ div.footer img {
 
 #share-link1:hover {
     background-color: #e61d1d;
+    border-radius: 50%;
+    width: 18%;
 }
 
 #share-link1 {
-    border-radius: 50%;
-    font-weight: bold;
-    margin: 10px 10px;
-    padding: 10px;
-    font-size: 18px;
-    font-family: -webkit-body;
-    background-color: white;
-    border: 1px solid gray;
-    width: 40px;
-    height: 40px;
+    color: floralwhite;
+    padding: 15px;
+    width: 23%;
 }
 
 .footer-btm {

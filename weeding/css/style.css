@@ -21,7 +21,7 @@
 			}
 
 			.footer_include {
-				height: 585px;
+				height: 620px;
 			}
 
 		
@@ -82,6 +82,21 @@
 				margin-top: 40px;
 				font-weight: 300;
 				list-style-type:none;
+			}
+			
+			.follw-us-font{
+				margin-top:50px;
+			}
+			
+			.follw-us-font a:hover{
+				color: #b3782c;
+			}
+			
+			.follw-us-font a{
+				display:block;
+				padding:10px;
+				margin-top:10px;
+				color:#a99b9b; 
 			}
 			
 			.camand-2{
@@ -190,8 +205,8 @@
 				transition: all .2s ease;
 			}
 			
-			.marriage-vows{
-				background: url(img/ribbon_bg.png) no-repeat top center;
+			.wedding-bg-img{
+				background: url(../img/ribbon-bg.png) no-repeat top center;
 				background-size: contain;
 			}
 			
@@ -278,6 +293,13 @@
 				padding: 10px 30px 10px 30px;
 				color: #ce944a;
 				border-radius: 30px;
+			}
+			
+			.view-shop-img:hover{
+				border:1px solid;
+				color: #a3783c;
+				opacity:0.6;
+				
 			}
 			
 			.view-shop-img{
@@ -416,6 +438,20 @@
 				padding-top: 100px;
 			}
 			
+			.angal-up-font {
+				display:block;
+				margin:0 auto;
+				width:0px;
+			}
+			
+			.angal-up-font button{
+				padding: 10px 20px 5px 20px;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				vertical-align: bottom;
+				background-color: #fbf4e8;
+			}
+			
 			.footer-bg{
 				background-color: #fbf4e8;
 				display: flex;
@@ -442,6 +478,27 @@
 				border-radius: 30px;
 			}
 			
+			.input-search{
+				position: relative;
+				width: 280px;
+			}
+			
+			.footer-p1 i{
+				position: relative;
+				top: -27px;
+				float: right;
+				right: 22px;
+			}
+			
+			.footer-p1 a{
+				text-decoration: none;
+				color: #c1b8b8;
+			}
+			
+			.footer-p1 span{
+				padding: 15px;
+			}
+			
 			
 			.footer{
 				width:210px;
@@ -454,7 +511,6 @@
 			}
 			
 			.footer li:hover{
-				border:1px solid #fbf4e8;
 				color: #985c09;
 			}
 			
