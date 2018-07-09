@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>love & me</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 		
 		<style type="text/css">
@@ -29,45 +30,75 @@
 			}
 			
 			#padding{
-				padding-right: 200px;
+				float: left;
 				display: inline-block;
 			}
 			
 			.div-header{
 				display:inline-block;
-				padding: 30px 0 30px 0;
 				position: relative;
 				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				float: right;
 			}
 		
-			.div-header ul{
+			.div-header >ul{
 				display: inline-block;
 				
 			}
 		
-			.div-header li{
+			.div-header >ul >li{
 				list-style-type: none;
 				display: inline-block;
 				font-size: 17px;
-
-			}
+				position: relative;
 			
+			}
+
+			.div-header >ul >li:hover .sub-main{
+				display: block;
+			}
+
 			.div-header a:hover{
 				background-color: #ef3479;
-				padding: 30px 10px 30px 10px;
 			}
 			
 			.div-header a{
 				text-decoration:none;
-				padding-right:20px;
+				padding: 12px;
+				padding-top: 30px;
+				padding-bottom: 30px;
 				color:white;
+				display: block;
+			}
+
+			ul.sub-main {
+				position: absolute;
+				top: 100%;
+				list-style: none;
+				background-color: white;
+				padding: 10px;
+				display: none;
+			}
+
+			ul.sub-main > li:hover{
+				background-color: #ef3479;
+				color: white;
+				cursor:pointer;
+			}
+
+			ul.sub-main > li {
+				min-width: 100px;
+				padding: 6px 10px;
 			}
 			
 			.logo-img-heart{
 				width: 145px;
 				position: absolute;
-				left: 600px;
-				top: -25px;
+				left: 50%;
+				top: 50%;
+				margin-top: -67.5px;
+				margin-left: -72.5px;
 			}
 			
 			.bg-img-love-we{
@@ -95,7 +126,7 @@
 			}
 			
 			.img-1-center h3{
-				font-family: lobster;
+				font-family: cursive;
 				font-size: 36px;
 				padding-left: 20px;
 				padding-bottom: 10px;
@@ -108,7 +139,7 @@
 			
 			.our-love-story h3{
 				font-size: 36px;
-				font-family: 'Kaushan Script', cursive;
+				font-family: cursive;
 				padding-bottom: 10px;
 			}
 			
@@ -126,8 +157,10 @@
 				width: 270px;
 				text-align: justify;
 				line-height: 23px;
-			padding-top: 15px;
-			font-family: 'Lato', sans-serif;
+				padding-top: 15px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 300;
+
 			}
 			
 			.img-story-part{
@@ -150,6 +183,15 @@
 					<ul>
 						<li>
 							<a href="">HOME</a>
+							<ul class="sub-main">
+								<li>one</li>
+								<li>two</li>
+								<li>three</li>
+								<li>four</li>
+								<li>five</li>
+								<li>six</li>
+								<li>seven</li>
+							</ul>
 						</li>
 						<li>
 							<a href="">FEATURE</a>
