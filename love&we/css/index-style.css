@@ -1,0 +1,749 @@
+
+			*{
+				margin:0;
+				padding:0;
+				border:0;
+				box-sizing: border-box;
+			}
+			
+			.index-header,
+			.index-footer{
+				width:100%;
+			}
+			
+			
+			.index-header{
+				height:530px;
+			}
+			
+			.index-footer{
+				height:700px;
+			}
+			
+			.camand-love-we{
+				width: 1200px;
+				display: block;
+				margin: 0 auto;
+			}
+			
+			.header{
+				background-color: rgba(0, 0, 0, 0.4);
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 60px;
+				z-index: 999;
+			}
+			
+			#padding{
+				float: left;
+				display: inline-block;
+			}
+			
+			.div-header{
+				display:inline-block;
+				position: relative;
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				float: right;
+			}
+		
+			.div-header >ul{
+				display: inline-block;
+				
+			}
+		
+			.div-header >ul >li{
+				list-style-type: none;
+				display: inline-block;
+				font-size: 17px;
+				position: relative;
+			
+			}
+
+			.div-header >ul >li:hover .sub-main{
+				display: block;
+			}
+
+			.div-header a:hover{
+				background-color: #ef3479;
+			}
+			
+			.div-header a{
+				text-decoration:none;
+				padding: 12px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				color:white;
+				display: block;
+			}
+
+			ul.sub-main {
+				position: absolute;
+				top: 100%;
+				list-style: none;
+				background-color: white;
+				padding: 10px;
+				display: none;
+			}
+		
+
+			ul.sub-main > li:hover{
+				background-color: #ef3479;
+				color: white;
+				cursor:pointer;
+			}
+
+			ul.sub-main > li {
+				min-width: 100px;
+				padding: 6px 10px;
+			}
+			
+			
+			.div-header >ul >li:hover .sub-main-blog{
+				display:block;
+			}
+			
+			ul.sub-main-blog >li:hover{
+				color:white;
+				background-color: #ef3479;
+				cursor:pointer;
+				
+			}
+			
+			ul.sub-main-blog{
+				position: absolute;
+				list-style: none;
+				top: 100%;
+				padding: 10px;
+				width: 125px;
+				background-color:white;
+				display:none;
+			}
+			
+			ul.sub-main-blog > li{
+				max-width: 100px;
+				padding: 10px 6px;
+			}
+			
+			.div-header >ul >li:hover .sub-main-gallery{
+				display:block;
+			}
+			
+			ul.sub-main-gallery{
+				position: absolute;
+				list-style: none;
+				top: 100%;
+				padding: 10px;
+				width: 295px;
+				background-color:white;
+				display:none;
+				box-shadow: 0 2px 2px rgba(0,0,0,.5);
+			}
+			
+			ul.sub-main-gallery > li{
+				display:inline-block;
+				max-width:150px;
+			}
+			
+			.gallery-hov-img:hover{
+				border:2px solid  #ef3479;;
+			}
+			
+			.gallery-hov-img{
+				width: 135px;
+				border: 2px solid transparent;
+				
+			}
+			
+			.logo-img-heart{
+				width: 145px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -67.5px;
+				margin-left: -72.5px;
+			}
+			
+			.bg-img-love-we{
+				position: relative;
+				background-image: url(../img/home-img.jpg);
+				background-size: cover;
+				background-position: center;
+				padding: 375px 0 137px;
+			}
+			
+			.bg-color-onimage{
+				background-color: rgba(0,0,0,0.6);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+			
+			.img-1-center{
+				position: relative;
+				bottom: -310px;
+				text-align: center;
+				color: white;
+			}
+			
+			.img-1-center h3{
+				font-family: cursive;
+				font-size: 36px;
+				padding-left: 20px;
+				padding-bottom: 10px;
+			}
+			
+			.our-love-story{
+				text-align:center;
+				margin: 60px;
+			}
+			
+			.our-love-story a:hover{
+				color: #f6227a;
+			}
+			
+			.our-love-story a{
+				text-decoration: none;
+				color: black;
+			}
+			
+			.our-love-story h3{
+				font-size: 36px;
+				font-family: cursive;
+				padding-bottom: 10px;
+			}
+			
+			.story-part{
+				width:570px;
+				padding:10px;
+				display: inline-block;
+				margin: 14px;
+
+			}
+			
+			.img-story-part{
+				width: 190px;
+				height: 263px;
+				float: left;
+
+			}
+			
+			.story-part span{
+				display:inline-block;
+				vertical-align: top;
+				float: left;
+
+			}
+			
+			.story-part h4{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size:25px;
+				padding: 10px 15px;
+				box-shadow: 0px 0px 2px #ccbfbf;
+				position: relative;
+			}
+			
+			.bg-our-meet{
+				padding-left: 15px;
+				background-color: #f0f0eef0;
+				padding-right: 10px;
+			}
+			
+			.story-part p{
+				width: 325px;
+				text-align: justify;
+				line-height: 24px;
+				padding: 25px 0 25px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 300;
+
+			}
+			
+			.story-part a{
+				text-decoration: none;
+				color: #f70d79;
+				
+			}
+			
+			.story-part i{
+				color: #f01f52;
+				margin-right: 5px;
+				vertical-align: bottom;
+			}
+			
+			.story-part li{
+				display: inline-block;
+				margin: 10px;
+				margin-top: 20px;
+			}
+			
+			.map-img{
+				width:100%;
+				height: 300px;
+				margin-top: 150px;
+			}
+			
+			.footer-section{
+				width: 1100px;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.footer{
+				text-align: center;
+				padding: 50px;
+				box-shadow: 0 0 8px #e6dede;
+				margin-top: 100px;
+				position: relative;
+				margin-top: -130px;
+				background-color: white;
+
+			}
+			.footer h4{
+				text-align: center;
+				font-size: 40px;
+				font-family: cursive;
+				margin-top: 30px;
+
+				
+			}
+			
+			.footer-font a:hover{
+				color: #f6227a;
+			}
+			
+			.footer-font a{
+				text-decoration: none;
+				padding: 10px;
+				color: #9c9699;
+			}
+			
+			.footer-end p{
+				text-align: center;
+				margin: 30px;
+				letter-spacing: 1px;
+				font-family: lato;
+				font-weight: 300;
+				color: #77646e;
+			}
+			
+			.footer-end a{
+				text-decoration:none;
+				color: #ef3479;
+				font-weight: 400;
+
+			}
+			
+		/*about-us.css*/
+		
+			.camand-love-we-2{
+				display:table;
+				margin:0 auto;
+				width:1200px;
+			}
+		
+			.sec-bridel{
+			    margin-top: 80px;
+
+			}
+		
+			.bridel-details-img{
+				float: left;
+			}
+		
+			.bridel-details{
+				float: left;
+				width: 700px;
+				
+			}
+			
+			.bridel-details h3{
+				text-align: center;
+				font-size: 30px;
+				font-family: cursive;
+			}
+			
+			.bridel-details p{
+				line-height: 30px;
+				padding: 20px 30px;
+				text-align: justify;
+				font-family: lato;
+				font-weight: 300;
+				
+			}
+			
+			.bg-about-index{
+				box-shadow:0 0 10px #c7c4c4;
+				margin-top: 25px;
+
+			}
+			
+			.about-idnex-font{
+				padding-left: 30px;
+				padding-bottom: 33px;
+			}
+			
+			.about-idnex-font a:hover{
+				color:#ef3479;
+			}
+			
+			.about-idnex-font a{
+				text-decoration:none;
+				padding:10px;
+				color:#c7c4c4;
+				
+			}
+			
+			.sec-groom{
+			    margin-top: 80px;
+			}
+			
+			.groom-details-img{
+				float: right;
+			}
+			
+			.groom-details{
+				float: right;
+				width: 700px;
+				
+			}
+			
+			.groom-details h3{
+				text-align: center;
+				font-size: 30px;
+				font-family: cursive;
+			}
+			
+			.groom-details p{
+				line-height: 30px;
+				padding: 20px 30px;
+				text-align: justify;
+				font-family: lato;
+				font-weight: 300;
+				
+			}
+			
+		/*gallery index css */
+			
+			.photo-type ul{
+				display: flex;
+				list-style: none;
+				padding: 20px 0 35px;
+
+			}
+			.photo-type{
+				width:700px;
+				margin:0 auto;
+				display:block;
+				
+			}
+			
+			.photo-type a:hover{
+				color: #ef3479;
+				
+			}
+			
+			.photo-type a{
+				text-decoration:none;
+				padding: 13px;
+				font-size: 18px;
+				color: black;
+			}
+			
+			.gallery-img:hover{
+				border: 2px solid #ef3479;
+				opacity: 0.6;
+			}
+			
+			.gallery-img{
+				width: 25%;
+				float:left;
+				border: 2px solid white;
+			}
+			
+			.gallery-img-section{
+				display:table;
+			}
+			
+			.gallery-img-2{
+				 margin-top: 40px;
+
+				
+			}
+			
+			.button1-5{
+				display:block;
+				text-align: center;
+
+			}
+			
+			.button1-5 button:hover{
+				background-color: #ef3479;
+				color:white;
+			}
+			
+			.button1-5 button{
+				padding: 8px;
+				font-size: 15px;
+				background-color: #e8e6e6;
+				outline: none;
+				margin-right: 10px;
+				border: 1px solid #e41f8c;
+				
+			}
+		
+		/*marriag invitation css */	
+		
+		.bg-img-love-we-2{
+			position: relative;
+			background-image: url(../img/bg-img-p2.jpg);
+			background-size: cover;
+			background-position: center;
+			padding: 560px 0 137px;
+			
+		}
+		
+		.bg-img-love-we-2 h5{
+			font-family: sans-serif;
+			font-size: 25px;
+			padding: 20px;
+		}
+		
+		.bg-img-love-we-2 h3{
+			font-family: cursive;
+			font-size: 65px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+		}
+		
+		.div-m-i-heart{
+			box-shadow: 0 0 10px #cccbcb;
+			padding: 5px 0 30px;
+			margin-top: 100px;
+		}
+		
+		.comming-soon-day{
+			text-align:center;
+			margin: 30px;
+		}
+		
+		.comming-soon-day h3{
+			font-size: 36px;
+			font-family: cursive;
+			padding-bottom: 10px;
+		}
+		
+		.m-i-heart-img{
+			width:24%;
+			padding:50px;
+		}
+		
+		.comming-soon-bg{
+			background-image:url(../img/m-i-heart.png);
+			background-repeat:no-repeat;
+			background-size:cover;
+			color: #393939;
+			display: inline-block;
+			height: 160px;
+			margin: 20px 60px 40px 60px;
+			text-transform: capitalize;
+			width: 175px;
+			
+		}
+		
+		.comming-soon-bg h3{
+			color: #333333;
+			display: block;
+			line-height: 20px;
+			margin-bottom: 10px;
+			padding-top: 50px;
+			text-align: center;
+			padding-bottom:20px;
+			font-family:cursive;
+			font-size: 20px;
+
+		}
+		
+		.happy-couple{
+			background-image:url(../img/bg.jpg);
+			background-position: center;
+			padding-bottom: 100px;
+			display: grid;
+			margin: 140px 0 100px;
+		}
+		
+		
+		.happy-couple-img1{
+			float:left;
+		}
+		
+		.happy-couple-img2{
+			float:right;
+		}
+		
+		.section-Wedding-Events{
+			background-color:#f1f1ef;
+			padding: 20px 0 70px;
+			margin: 100px 0 100px;
+
+		}
+		
+		.m-i-img{
+			display:inline-block;
+			position:relative;
+		}
+		
+		.position-Ceremony-Event{
+			display:inline-block;
+			display: inline-block;
+			position: absolute;
+			right: 70px;
+			margin-top:55px;
+		}
+		
+		
+		.Ceremony-Event{
+			background-image: url(../img/m-i-bg2.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 100%;
+			width: 700px;
+			text-align: center;
+			margin-bottom: 25px;
+
+		}
+		
+		.Ceremony-Event-2{
+			background-image: url(../img/m-i-bg1.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 100%;
+			width: 700px;
+			text-align: center;
+			margin-bottom: 25px;
+			color:white;
+
+		}
+		
+		.Wedding-party:hover{
+			background-color: #f65589;
+			color:white;
+		}
+		
+		.Wedding-party{
+			padding: 40px 40px;
+		}
+		
+		.Wedding-party h3{
+			 font-size: 30px;
+			font-family: cursive;
+			padding: 5px;
+		 }
+		 
+		 .Wedding-party i{
+			 padding-right: 20px;
+			 
+		 }
+		 
+		 .Wedding-party p{
+			line-height: 25px;
+			padding: 15px;
+			font-family: sans-serif;
+			font-size: 15px;
+		 }
+		 
+		 .section-testimonial{
+			background-image:url(../img/m-i-bg3.jpg);
+			background-position:center center;
+			background-size:cover;
+			background-repeat:no-repeat;
+			margin:100px 0 100px;
+			position:relative;
+		 }
+		 
+		 .m-i-1-1-img{
+			position:relative;
+		 }
+		 
+		 .position-testimonial{
+			position:absolute;
+			position: absolute;
+			top: 22%;
+			left: 28%;
+		 }
+		 
+		 .testimonial{
+			display: inline-block;
+			box-shadow: 2px 0 5px gainsboro;
+			padding: 30px 140px 30px 100px;
+			background-color: white;
+		 }
+		 
+		 .testimonial p{
+			width: 600px;
+			font-size: 18px;
+			line-height: 25px;
+			font-family: sans-serif;
+			padding: 20px 0 10px;
+		 }
+		 
+		 .testimonial h4{
+			font-size: 20px;
+			color: deeppink;
+			font-family: cursive;
+		 }
+		
+		.testimonial i{
+			font-size: 100px;
+			color: #f65589;
+		}
+		
+		.testimonial a{
+			text-decoration:none;
+			float:right;
+			padding-right:10px;
+			font-size:25px;
+			color: #f65589;
+			font-family:cursive;
+		}
+		
+		.Are-You-Attending{
+			background-image:url(../img/m-i-bg4.jpg);
+			background-repeat:no-repeat;
+			background-position:center center;
+			background-size:cover;
+		}
+		
+		.form-wedding{
+			width:700px;
+			margin-left: 100px;
+			padding-bottom: 100px;
+
+		}
+		
+		.form-wedding input{
+			padding: 12px 140px 13px 10px;
+			margin: 12px;
+			border: 1px solid gainsboro;
+			background-color: #f7f7f7;
+		}
+		
+		.form-wedding textarea{
+			padding: 20px 450px 10px 20px;
+			margin: 12px;
+			border: 1px solid gainsboro;
+			font-size: 17px;
+			background-color: #f7f7f7;
+			font-family: sans-serif;
+		}
+		
+		.form-wedding button{	
+			padding: 10px 300px 10px 300px;
+			background-color: #f65589
+		}
