@@ -27,7 +27,7 @@
 			}
 			
 			.header{
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.3);
 				left: 0;
 				position: absolute;
 				right: 0;
@@ -301,6 +301,7 @@
 				position: relative;
 				margin-top: -130px;
 				background-color: white;
+				cursor:pointer;
 
 			}
 			.footer h4{
@@ -454,26 +455,67 @@
 				color: black;
 			}
 			
-			.gallery-img:hover{
+			/*.gallery-img:hover{
 				border: 2px solid #ef3479;
 				opacity: 0.6;
-			}
+				cursor:pointer;
+			}*/
 			
 			.gallery-img{
-				width: 25%;
-				float:left;
+				width: 100%;
 				border: 2px solid white;
 			}
 			
 			.gallery-img-section{
 				display:table;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.gallery-overlay:hover .gallery-img-overlay{
+				opacity: 1;
+			}
+			
+			.gallery-overlay{
+				position:relative;
+				width: 24%;
+				float: left;
+				margin: 5px;
+			
 			}
 			
 			.gallery-img-2{
-				 margin-top: 40px;
-
+				margin-top: 40px;
+			}
+			
+			.gallery-img-overlay{
+				position: absolute;
+				width: 95%;
+				height: 100%;
+				opacity: 0;
+				top: 35px;
+				left: 37px;
+				transition: .5s ease;
 				
 			}
+			
+			.text{
+				color: black;
+				font-size: 20px;
+				position: absolute;
+				text-align: center;
+				background-color: rgba(246, 85, 137, 0.58);
+				padding: 73px 103px 101px 60px;
+				border-radius: 10px;
+			}
+			
+			.text i{
+				color: white;
+				font-size: 60px;
+				display: block;
+				padding-bottom: 5px;
+			}
+			
 			
 			.button1-5{
 				display:block;
@@ -493,7 +535,10 @@
 				outline: none;
 				margin-right: 10px;
 				border: 1px solid #e41f8c;
-				
+			}
+			
+			.button1-5 a{
+				text-decoration:none;
 			}
 		
 		/*marriag invitation css */	
@@ -580,6 +625,7 @@
 		.happy-couple-img1{
 			float:left;
 		}
+		
 		
 		.happy-couple-img2{
 			float:right;
@@ -683,6 +729,7 @@
 			box-shadow: 2px 0 5px gainsboro;
 			padding: 30px 140px 30px 100px;
 			background-color: white;
+			cursor:pointer;
 		 }
 		 
 		 .testimonial p{
@@ -716,14 +763,17 @@
 		.Are-You-Attending{
 			background-image:url(../img/m-i-bg4.jpg);
 			background-repeat:no-repeat;
-			background-position:center center;
+			background-position:center right;
 			background-size:cover;
+			padding: 30px 0 100px;
+			margin: 30px 0 100px;
+
+
 		}
 		
 		.form-wedding{
 			width:700px;
 			margin-left: 100px;
-			padding-bottom: 100px;
 
 		}
 		
@@ -744,6 +794,95 @@
 		}
 		
 		.form-wedding button{	
-			padding: 10px 300px 10px 300px;
-			background-color: #f65589
+			padding: 10px 280px 10px 285px;
+			background-color: #f65589;
+			margin-left: 12px;
 		}
+		
+		.bridemaids-img{
+			float: right;
+			width: 600px;
+		}
+		
+		.bridemaids-img1{
+			padding:9px;
+		}
+		
+		.Bridemaids-photo{
+			position:relative;
+			margin-bottom:60px;
+			cursor:pointer;
+		}
+		
+		.title-position{
+			position: absolute;
+			top: 46%;
+			left: -50px;
+			
+		}
+		
+		.title-position h3{
+			font-family: cursive;
+			font-size: 27px;
+			transform: rotate(-90deg);
+		}
+		
+		.overlay-m-i:hover .overlay-img-mi{
+			opacity:1;
+		}
+		
+		.overlay-m-i{
+			position:relative;
+			width:50%;
+			max-width:500px;
+			display:inline-block;
+		}
+		
+		.overlay-img-mi{
+			position: absolute; 
+			bottom: 0; 
+			background: rgba(246, 85, 137, 0.67);
+			width: 94%;
+			transition: .5s ease;
+			opacity:0;
+			color: white;
+			font-size: 18px;
+			padding: 10px;
+			text-align: center;
+			margin-left: 100px;
+			font-family:cursive;
+			margin-bottom: 5px;
+		}
+		
+		.bridemaids-img2{
+			padding-left: 100px;
+			margin-top: 10px;
+		}
+		
+		
+		.h1-img:hover{
+			border: 1px solid deeppink;
+			display:block;
+		}
+		
+		.h1-img{
+			padding: 35px;
+			border: 1px solid white;
+			display:block;
+			float:left;
+			position:relative;
+
+		}
+		
+		.h1hover-img:hover{
+			display:block;
+		}
+		
+		.h1hover-img{
+			padding: 35px;
+			border: 1px solid white;
+			display:none;
+			position:absolute;
+		}
+		
+	

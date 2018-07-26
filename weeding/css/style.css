@@ -238,8 +238,37 @@
 				width:1100px;
 			}
 			
+			.pd:hover .pd-overlay-img{
+				opacity: 1;
+			}
+			
 			.pd{
-				display:inline-block;
+				position: relative;
+				width: 23%;
+				float: left;
+				margin: 10px;
+			}
+			
+			
+			.pd-img{
+				width: 100%;
+				
+			}
+			
+			.pd-overlay-img{
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				left: 0;
+			}
+			
+			.text{
+				font-size: 30px;
+				background: rgba(234, 186, 76, 0.58);
+				color: black;
+				text-align: center;
+				padding: 138px 77px 140px 75px;
+				
 			}
 			
 			.div-pd h1{
@@ -248,16 +277,6 @@
 				font-weight: 100;
 			}
 			
-			.pd-img:hover {
-				opacity: 0.5;
-			
-			}
-			
-			.pd-img{
-				width: 270px;
-				padding: 10px;
-				
-			}
 			
 			.pd h3:hover{
 				color:#e8a649;
@@ -540,5 +559,328 @@
 			
 			.footer-part2 i{
 				padding-right:35px;
+			}
+			
+		/* new page wedding html css*/
+		
+			.headding{
+				text-align: center;
+				font-size: 55px;
+				font-family: "Josefin Sans", sans-serif;
+				font-stretch: condensed;
+				margin-top: 100px;
+			}
+		
+			.headding h3{
+				font-weight: 100;
+				letter-spacing: 5px;
+				line-height: 75px;
+			}
+			
+			.headding h4{
+				letter-spacing: 10px;
+				line-height: 100px;
+				font-weight:600;
+				font-family: serif;
+			}
+			
+			.headding span{
+				color: #d69c0d;
+			}
+			
+			.about-img-2:hover{
+				transform: scale(0.9);
+				box-shadow: 0 0 20px #e4c085;
+			}
+			
+			.about-img-1{
+				display: block;
+				margin: 0 auto;
+				margin-bottom:80px;
+			}
+			
+			.about-img-2{
+				display: block;
+				margin: 0 auto;
+				margin-bottom:80px;
+			}
+			
+			.about-m-vows{
+				position:relativ;
+			}
+			
+			.about-m-vows h3{
+				width: 200px;
+				font-size: 45px;
+				position: absolute;
+				bottom: -243px;
+				left: 195px;
+				color: #e0ad37;
+			}
+			
+			.about-inf{
+				width: 800px;
+				margin: 0 auto;
+			}
+			
+			.about-inf{
+				color: #c7bcad;
+			}
+			
+			.about-ingredient{
+				display: flex;
+				text-align: justify;
+				font-size: 17px;
+			}
+			
+			.about-ingredient i{
+				font-weight: 100;
+				font-size: 80px;
+				display: inline-block;
+				vertical-align: text-bottom;
+				height: 100px;
+				line-height: 122px;
+				color: #c7bcad;
+			}
+			
+			.about-ingredient p{
+				padding: 18px;
+				font-family: cursive;
+				color: #8e7b7b;
+			}
+			
+			.moto-inf{
+				width: 600px;
+				display: block;
+				margin: 0 auto;
+				border-bottom: 1px solid gainsboro;
+				border-bottom-left-radius: 20%;
+				border-bottom-right-radius: 20%;
+				border-top: 1px solid gainsboro;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				margin-top: 100px;
+			}
+			
+			.moto-inf h3{
+				font-size: 28px;
+				text-align: center;
+				font-weight: 100;
+				color: #f8b138;
+				margin-top: 70px;
+				font-family: cursive;
+				margin-bottom:50px;
+			}
+			
+			.our-family{
+				padding-left: 130px;
+				margin-top: 125px;
+				width: 1200px;
+				text-align: left;
+			}
+			
+			.our-family h3{
+				font-size: 50px;
+				color: #b98661;
+				line-height: 65px;
+				font-family: -webkit-body;
+			}
+			
+			.our-family p{
+				width: 440px;
+				font-size: 18px;
+				line-height: 30px;
+				color: #8f8c84;
+				margin-top: 20px;
+				font-family: cursive;
+			}
+			
+			.our-family-datalist{
+				width: 1100px;
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.member-details:hover .member-overlay-img{
+				opacity: 1;
+			}
+			
+			.member-details{
+				position:relative;
+				float:left;
+				margin: 10px;
+				margin-top: 50px;
+				width: 23%;
+				max-width:25%;
+			}
+			
+			.member-img{
+				width:100%;
+			}
+			
+			.member-overlay-img{
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				left: 0;
+				
+			}
+			
+			.text-2{
+				font-size: 17px;
+				width: 100%;
+				color: black;
+				background: rgba(185, 134, 97, 0.55);
+				text-align: center;
+				padding: 98px 43px;
+				
+			}
+			
+			.member-details i{
+				text-align:center;
+				color: #928c8c;
+			}
+			
+			.author-carousel{
+				width: 800px;
+				display: block;
+				margin: 0 auto;
+			}
+			
+			.author-carousel p{
+				margin-top: 150px;
+				font-size: 26px;
+				font-weight: 100;
+				text-align: center;
+				font-family: cursive;
+			}
+			
+			.author-carousel-img{
+				border-radius: 50%;
+				width: 20%;
+				display: block;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+			
+			.font-circal:hover{
+				color:black;
+			}
+			
+			.font-circal{
+				color: #9a9494;
+				display: block;
+				margin: 0 auto;
+				width: 58px;
+				margin-top: 15px;
+			}
+			
+			.press-prod{
+				width: 1040px;
+				display: block;
+				margin: 0 auto;
+				margin-top:150px;
+				text-align: center;
+			}
+			
+			.press-prod h3{
+				font-size: 50px;
+				color: #b98661;
+				line-height: 65px;
+				font-family: -webkit-body;
+			}
+			
+			.press-width{
+				text-align: center;
+				margin-top:40px;
+				margin-bottom: 30px;
+			}
+			.hover-images:hover{
+				color:black;	
+			}
+			
+			.hover-images{
+				overflow: hidden;
+				display: inline-block;
+				vertical-align: bottom;
+			}
+			
+			.press-prod-img{
+				opacity: 0.3;
+			}
+			
+			.publication{
+				border-bottom:1px solid;
+				width: 208px;
+				display: block;
+				margin: 0 auto;
+				
+			}
+			.publication a{
+				text-decoration:none;
+			}
+			
+			.about-end{
+				display:flex;
+				width: 1100px;
+				margin: 0 auto;
+				margin-top:100px;
+			}
+			
+			.abou-inquire{
+				text-align: center;
+				border-right: 1px solid gainsboro;
+				height: 300px;
+				margin: 46px;
+				padding-right: 135px;
+			}
+			
+			.abou-inquire h4{
+				color: #d89d4e;
+				font-size: 20px;
+				font-family: cursive;
+				padding-bottom: 15px;
+			}
+			.abou-inquire a{
+				font-size: 20px;
+				margin-bottom: 15px;
+				text-decoration: none;
+				color: #f14d4d;
+			}
+			
+			.abou-inquire p{
+				font-size: 20px;
+				padding-bottom: 25px;
+			}
+			
+			.hollywood{
+				text-align: center;
+				height: 300px;
+				margin: 46px;
+				padding-right: 135px;
+			}
+			
+			.hollywood img{
+				margin-bottom:20px;
+				width:45%;
+			}
+			
+			.hollywood h4{
+				color: #d89d4e;
+				font-size: 20px;
+				font-family: cursive;
+				padding-bottom: 15px;
+			}
+			
+			.hollywood i{
+				font-size: 45px;
+				font-weight: 100;
+				font-family: monospace;
+				color: #797777;
+			}
+			
+			.reserved{
+				text-align: center;
+				color: #a09d99;
 			}
 	
