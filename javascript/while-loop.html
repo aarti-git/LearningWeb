@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>while loop</title>
+	</head>
+	
+	<body>
+		<!-- while loop -->
+		<h3>while loop </h3>
+		<script type="text/javascript">
+				var n=0;
+					while(n<5)
+					{
+					document.write("number:" + " " + n + "</br>");
+					n++;
+					}
+					
+			</script>
+			</br>
+			<script type="text/javascript">
+				var n=0;
+				while(n<10)
+				{
+					document.write("number:"+ " " + n + "</br>");
+					n++;
+				}
+			</script>
+			</br>
+		<!--do/while loop -->
+		<h3> do/while loop</h3>
+			<script type="text/javascript">
+				var n=0;
+				do
+				{
+					document.write("number:" + " " + n + "</br>");
+					n++;
+				}
+				
+				while(n<5);
+				document.write("loop stoped !");
+			</script>
+		<!--for loop -->
+		<h3> for loop</h3>
+			<script type="text/javascript">
+				var n;
+				for(n=0;n<5;n++)
+				{
+					document.write("number:" + " " + n);
+					document.write("</br>");
+					
+				}
+				
+				document.write("loop stoped!");
+			</script>
+		<!--for/in loop -->
+		<h3> for/in loop</h3>
+			<script type="text/javascript">
+				var student =
+				{
+					fname:"raj",
+					lname:"bhosle",
+					age:20,
+					contact:9881444444};
+				var x;
+				for(x in student)
+				{
+					document.write( student[x]+" ");
+				}
+		</script>
+		<!--loop cantrol -->
+			<h3> loop cantrol</h3>
+			<script type="text/javascript">
+				var n;
+				for(n=0;n<10;n++)
+				{
+					if(n===3)
+					break;   //break statment stop when n===3 
+					document.write(n + "</br>");
+				}
+				
+				document.write("cantrole is executed")
+				
+			</script>
+		<!--loop cantinues -->
+			<h3> loop cantinues</h3>
+			<script type="text/javascript">
+				n=1;
+				while(n<10)
+				{
+					n= n + 1;
+					if (n==5){
+						continue; //cantinue just break a only statment which is added any condition and then execute next statment.
+					}
+					document.write(n + "</br>");
+				}
+			</script>
+			<script>
+				//labels :in a text statment use a {break (list name)} 
+			</script>
+			
+	</body>
+</html>

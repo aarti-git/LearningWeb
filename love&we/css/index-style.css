@@ -591,7 +591,6 @@
 			background-image:url(../img/m-i-heart.png);
 			background-repeat:no-repeat;
 			background-size:cover;
-			color: #393939;
 			display: inline-block;
 			height: 160px;
 			margin: 20px 60px 40px 60px;
@@ -718,7 +717,6 @@
 		 }
 		 
 		 .position-testimonial{
-			position:absolute;
 			position: absolute;
 			top: 22%;
 			left: 28%;
@@ -785,10 +783,12 @@
 		}
 		
 		.form-wedding textarea{
-			padding: 20px 450px 10px 20px;
+			padding: 10px 10px 10px 20px;
+			width:93%;
 			margin: 12px;
 			border: 1px solid gainsboro;
 			font-size: 17px;
+			text-align: justify;
 			background-color: #f7f7f7;
 			font-family: sans-serif;
 		}

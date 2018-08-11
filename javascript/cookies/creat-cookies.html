@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<title>cookies</title>
+		<script>
+			function mycookies(){
+				var now= new Date();
+				now.getMonth(now.setMonth + 1);
+				cookievalue=escape(document.myform.cooke.value);
+				document.cookie="name =" + cookievalue;
+				document.cookie="expire =" + now.toUTCString();
+				
+				alert("cookie is create");
+				alert("cookie name is " + cookievalue);
+				alert("cookies expire to"+ now);
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform" action="">
+		ENTER COOKIES NAME:<input type="text" name="cooke">
+		<input type="button" value="creat cookies" onclick=mycookies()>
+		
+		</form>
+	</body>
+</html>

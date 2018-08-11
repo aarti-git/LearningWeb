@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> using swich case javascript</title>
+	</head>
+
+	<body>
+	<h1>using swich case javascript</h1>
+	<p>coureses offered</p>
+	<p>javascript</p>
+	<p>HTML</p>
+	<p>css</p>
+	<p>c++</p>
+	<p id="demo"></p>
+
+		<script>
+			var text;
+			var c=prompt("enter your choice");
+			var course=parseInt(c);
+			switch(course)
+			{
+				case 1: text="you selected javascript......Let as start";
+				break;
+				case 2: text="you selected HTML......Let as start";
+				break;
+				case 3: text="you selected css......Let as start";
+				break;
+				case 4: text="you selected c++......Let as start";
+				break;
+			}
+			document.getElementById("demo").innerHTML=text;
+		</script>
+	</body>
+	</html>

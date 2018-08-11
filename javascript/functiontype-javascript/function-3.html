@@ -1,0 +1,56 @@
+<!DOCTYPE.html>
+<html>
+	<head>
+		<title> function 3 </title>
+		<style type="text/css">
+			body {
+				margin:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>use of function in javascript</h2>
+		<form>
+			Enter 1st Number :<input type="text" id="first"/> </br>
+			Enter 2st Number :<input type="text" id="second"/> </br>
+			<input type="button" onclick="Multiply();" value="Multiply"/>
+			<input type="button" onclick="Divide();" value="Divide"/>
+		</form>
+		<p> The result is : </br>
+			<span id="result"></span>
+		</p>
+		<script>
+			function Multiply(){
+				
+				num1= document.getElementById("first").value;
+				num2= document.getElementById("second").value;
+				document.getElementById("result").innerHTML = num1*num2;
+			}
+			function Divide(){
+				
+				num1= document.getElementById("first").value;
+				num2= document.getElementById("second").value;
+				document.getElementById("result").innerHTML = num1/num2;
+			}
+		
+		</script>
+		</br>
+		</br>
+		<script>
+			function find(str,letter)
+			{
+			var letter_count=0;
+			for(var position=0;position<str.lenght;position++)
+			{
+			if(str.charAt(position)==letter)
+				{
+					letter_count+=1;
+				}
+			}
+				return letter_count;
+			}
+			document.write(find('aarti suryawanshi','a'));
+		</script>
+				
+	</body>
+	</html>

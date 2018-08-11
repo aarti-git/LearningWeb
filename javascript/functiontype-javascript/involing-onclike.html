@@ -1,0 +1,43 @@
+<!DOCTYPE.html>
+<html>
+	<head>
+		<title> function section 2 </title>
+		
+	<!--onclik -->
+		<script>
+			function sayHello(name,age){
+				var name = "aarti";
+				var age = 21;
+				document.write( name + " is" + " " +  age +" year old.");
+			}
+			</script>
+			</br>
+		<!--invoking function as afunction -->
+			<script>
+				function myfunc(a,b){
+					return a*b
+				}
+				document.write(myfunc(10,2));
+			</script>
+			</br>
+		
+		<!--invoking function as method-->
+			<script>
+				var myname ={
+					
+					firstName:"aarti",
+					lastName :"yogesh",
+					fullName : function(){
+						return this.firstName + " " + this.lastName ;
+					}
+				}
+				document.write(myname.fullName());
+			</script>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<form>
+			<input type="button" onclick="sayHello()" value="say Hello">
+		</form>
+	</body>
+</html>

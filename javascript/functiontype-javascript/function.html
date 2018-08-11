@@ -1,0 +1,59 @@
+<!DOCTYPE.html>
+<html>
+	<head>
+		<title> function in javascript </title>
+		
+	<!-- function-->
+		<script>
+			function sayhello(){
+				alert("hello welcome to javascript");
+			}
+			sayhello()
+		</script>
+		</br>
+	<!-- return in colspan-->
+		<script>
+			var a = "aarti";
+			var b = "love";
+			var c = "yogesh";
+			function myFunction(a,b,c){
+				return a + " " + b + " " + c ;
+			}
+			myFunction(a,b,c)
+		</script>
+	<!-- return in page-->
+		<script>
+			function klMetor(k){
+				return k*1000;
+			}
+			
+			document.write("the distance in km is" +  " " +klMetor(6) + "." );
+			
+		</script>
+	</br>
+	<!-- exprestion-->
+		<script>
+			var x=function (k) {return k*1000};
+			var y= x(5);
+			
+			document.write("the distance in km is"  + " " + klMetor(5) + "." );
+			
+		</script>
+	<!-- parameter-->
+		<script>
+			function check(l,m){
+				alert("l=" + l +", m=" + m);
+			}
+			check(1);
+			check(1,2);
+			check(1,2,3);
+		
+		</script>
+	
+	</head>
+	
+	<body>
+	
+		<p id="demo"></p>
+	</body>
+</html>

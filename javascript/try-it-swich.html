@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> try it swich javascript</title>
+	</head>
+		
+<body>
+	<h1>using swich case javascript</h1>
+	<p>courses offers</p>
+	<p>1.javascript</p>
+	<p>2.HTML</p>
+	<p>3.css</p>
+	<p>4.c++</p>
+	<p id="demo"></p>
+	
+	<script>
+		var text;
+		var c=prompt("enter your choice language 1-2-3-4");
+		var course=parseInt(c);
+		switch(course)
+		{
+			case 1:
+				text="you selected javascript......Let as start";
+			break;
+			case 2:
+				text="you selected HTML......Let as start";
+			break;
+			case 3: 
+				text="you selected css......Let as start";
+			break;
+			case 4: 
+				text="you selected c++......Let as start";
+			break;
+			default: 
+				text="this course not avalable ....";
+			break;
+		}
+		document.getElementById("demo").innerHTML=text;
+	</script>
+</body>
+</html>
