@@ -31,8 +31,8 @@
 		<p id="demo"></p>
 		<script>
 			function myfunction(){
-				var x = document.getElementById("event") .value;
-				document.getElementById("demo") .innerHTML = "Your selected color :"+ x;
+				var x = document.getElementById("event").value;
+				document.getElementById("demo").innerHTML = "Your selected color :"+ x;
 			}
 		</script>
 		</br>
@@ -64,40 +64,19 @@
 		</div>
 		</br>
 		</br>
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		</br>
-		</br>
 		
 		<script>
 			function over(){
-				document.write("your onmouseover event active")
+				document.getElementById("output").innerHTML="your onmouseover event active"
 			}
 			
 			function out(){
-				document.write("your onmouseout event active")
+				document.getElementById("output").innerHTML="your onmouseout event active"
 			}
 		</script>
 		<div onmouseover="over()"; onmouseout="out()";>
-			<h2>event of onmouseover and onmouseout </h2>
-			<h3>event of onmouseover and onmouseout </h3>
+			<h2 id="output">event of onmouseover and onmouseout </h2>
+			
 		</div>
 	</body>
 </html>
