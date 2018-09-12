@@ -170,6 +170,7 @@
 				background-image: url(../img/home-img.jpg);
 				background-size: cover;
 				background-position: center;
+				background-attachment: fixed;
 				padding: 375px 0 137px;
 			}
 			
@@ -494,7 +495,7 @@
 				height: 100%;
 				opacity: 0;
 				top: 35px;
-				left: 37px;
+				left: 35px;
 				transition: .5s ease;
 				
 			}
@@ -549,6 +550,8 @@
 			background-size: cover;
 			background-position: center;
 			padding: 560px 0 137px;
+			background-attachment: fixed;
+
 			
 		}
 		

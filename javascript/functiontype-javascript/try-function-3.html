@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multipal and Divide</title>
+		<style type="text/css">
+			body{
+				margin:0 auto;
+				text-align:center;
+			}
+			
+			.form input{
+				margin:10px;
+			}
+			
+			
+		</style>
+	</head>
+<body>
+	<div>
+		<h1>Multipal and Divide onclick button</h1>
+	</div>
+	<form class="form">
+		Enter Number :<input type="text" id="first"></br>
+		Enter Number :<input type="text" id="second"></br>
+		<input type="button" onclick="Multiply()" value="Multiply">
+		<input type="button" onclick="Divide()" value="Divide">
+	</form>
+	<h3>Result :</h3>
+		<span id="result"></span>
+	</br>
+	</br>
+	<script>
+		function Multiply(){
+				  
+			num1= document.getElementById("first").value;
+			num2= document.getElementById("second").value;
+			document.getElementById("result").innerHTML= num1*num2;
+		}
+		function Divide(){
+			num1= document.getElementById("first").value;
+			num2= document.getElementById("second").value;
+			document.getElementById("result").innerHTML= num1/num2;
+		}
+	</script>
+</body>
+</html>

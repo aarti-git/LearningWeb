@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google Home Page </title>
+		<link rel="stylesheet" type="text/css" href="css/google-style.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+		
+		<script>
+			function shortcutDone(){
+				alert("Your edit shortcut process is successfull !!")
+			}
+
+			function openOverlay(){
+				var a = document.querySelector('.overlay-form');
+				a.style.display = 'block';
+			}
+			
+			function overlaycancel(){
+				document.querySelector('.overlay-form').style.display='none';
+			}
+		</script>
+	</head>
+<body>
+	<section class="camand-google">
+		<section>
+			<div class="logo">
+				<img class="google-img" src="img/google-img.png"/>
+			</div>
+		</section>
+		<section  class="search-space">
+				<input type="text" name=" " placeholder="Search Google or type URL " />
+				<img class="google-voice" src="img/voice-logo.png"/>
+		</section>
+		<section class="sec-web-logo">
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i  class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/youtube.png"/>
+				<div>
+					<a href=""> Youtube </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button"  onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/mail.png"/>
+				<div>
+					<a href=""> Mail </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button"  onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/linkedIn.png"/>
+				<div>
+					<a href=""> LinkedIn </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/facebook.png"/>
+				<div>
+					<a href=""> Facebook </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/guturgum.png"/>
+				<div>
+					<a href=""> guturgum </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/google-logo.png"/>
+				<div>
+					<a href=""> Google </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/jsonmaker.png"/>
+				<div>
+					<a href=""> Jsonmaker </a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<img src="img/guturgum.png"/>
+				<div>
+					<a href="">Index/guturgum</a>
+				</div>
+			</div>
+			<div class="web-names">
+				<div class="setting-button" onclick="openOverlay()">
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="add-font"  onclick="openOverlay()">
+					<i class="fas fa-plus"></i>
+				<div>
+				<div>
+					<a href=""> Add shortcut</a>
+				</div>
+			</div>
+			
+		</section>
+		<section class="form-overlay-position">
+			<div class="overlay-form">
+				<div class="edit-shortcut">
+					<h3>Edit shortcut</h3>
+					<p>Name :</p>
+					<input type="text" name="" placeholder="Enter Your Name">
+					<p>URL:</p>
+					<input type="text" name="" placeholder="Enter Your URL"></br>
+					<div class="form-button" >
+						<button class="button-remove">Remove</button>
+						<div class="form-button2">
+							<button class="button-remove" onclick="overlaycancel()">Cancel</button>
+							<button class="button-done" onclick="shortcutDone()">Done</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

@@ -293,7 +293,7 @@ h1 {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    float: left;
+  
 }
 
 div.divsecond {
@@ -517,7 +517,7 @@ div.footer img {
 #share-link1 {
     color: floralwhite;
     padding: 15px;
-    width: 23%;
+    font-size: 160%;
 }
 
 .footer-btm {

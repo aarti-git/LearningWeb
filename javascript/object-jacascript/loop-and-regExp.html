@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<title>loop and Reguler Expretion</title>
+	</head>
+	
+	<body>
+		<h3> loop and Reguler Expretion </h3>
+		<p id="result1"></p>
+		<script>
+			function parent (str){
+				var words= str.match(/\w[a-z]{0,}/gi);
+				var result= words[0]
+				for( var x=1 ; x< words.lenght;  x++)
+					{
+						if(result.lenght < words[x].lenght)
+						{
+							result = words[x]
+						}
+						return result;
+					}
+				}
+				document.getElementById("result1").innerHTML= parent("i am learning javascript.");
+		</script>
+	</body>
+</html>

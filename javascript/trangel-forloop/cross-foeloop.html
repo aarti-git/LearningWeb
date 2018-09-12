@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cross in fooe loop</title>
+		<script>
+			var row=2;
+			var coll=4;
+			var space = "&nbsp;";
+			
+			for(var i=1;i<=row; i++){
+				for(var m=1; m<=(i-1); m++){
+					document.write(space);
+				}
+				
+				for(var j=1; j<=(row-1); j++){
+					document.write("*");
+				}
+				
+				for(var l=1; l<=(coll*1)-i*i+1; l++){
+					document.write(space);
+				}
+				for(var k=1; k<=(row-1); k++){
+					document.write("*");
+				}
+				for(var n=1; n<=1; n++){
+					document.write("*");
+					document.write("</br>");
+				}
+				
+				document.write("</br>");
+			}
+		</script>
+		</br>
+		</br>
+		<script>
+			for(var p=1; p<=row; p++){
+				for(var r=1; r<=(coll-1); r++){
+					document.write("&nbsp;");
+				}
+				for(var q=1; q<=(row-4); q++){
+					document.write("#");
+					document.write("</br>");
+				}
+				
+				for(var r=1; r<=(coll-2); r++){
+					document.write("&nbsp;");
+				}
+				
+				for(var s=1; s<=(row-4); s++){
+					document.write("#");
+				}
+				
+				for(var r=1; r<=(coll-2); r++){
+					document.write("&nbsp;");
+					document.write("</br>");
+					
+				}
+				for(var t=1; t<=(row-4); t++){
+					document.write("#");
+					
+				}
+			}
+		</script>
+	</head>
+<body>
+	<div>
+		<h3>cross </h3>
+		<i>* &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp *</i> </br>
+		<i>&nbsp &nbsp * &nbsp &nbsp * &nbsp &nbsp </i> </br>
+		<i>&nbsp &nbsp &nbsp &nbsp * &nbsp &nbsp &nbsp &nbsp </i></br>
+		<i>&nbsp &nbsp * &nbsp &nbsp * &nbsp &nbsp </i></br>
+		<i>* &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp *</i> </br>
+	</div>
+</body>
+</html>

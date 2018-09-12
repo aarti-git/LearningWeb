@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> multiple object</title>
+
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+		function person(first, last, age) {
+			this.fname = first;
+			this.lname = last;
+			this.age = age;
+		}
+		var father = new person("anandrao", "s", 50);
+		var mother = new person("sadhana", "s", 45);
+		var sister = new person("kirti", "s", 18);
+
+		document.getElementById("demo").innerHTML =
+			"My father is " + father.age + ". my mother is " + mother.age + " and my sis is " + sister.age + " year old." +
+			"</br> ";
+		document.write(
+			"My father name is " + father.fname + ". my mother name is " + mother.fname + " and my sis name is " + sister.fname +
+			".");
+	</script>
+</body>
+
+</html>
