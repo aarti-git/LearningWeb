@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> validation form </title>
+    </head>
+    <body>
+        <script>
+            function formValidation()
+            {
+                var name = document.getElementById("myname").value;
+                var password = document.getElementById("mypassword").value;
+                var secondpassword = document.getElementById("mypassword2").value;
+
+                if (name==""){
+                    alert("Name can't be empty");
+                    return false;
+                }
+                else if(password.length<4){
+                    alert("password must be 4 degit long");
+                    return false;
+                }
+                else if(password!==secondpassword){
+                    alert("password must be same");
+                    return false;
+                   
+                }
+                else{
+                    alert("succsesfully ragisted !!" + " thank you "+ name + " !! ");
+                    return true;
+                }
+               
+            }
+        </script>
+        <h2>validation form in js </h2>
+        <form onsubmit="return formValidation();">
+            Name : <input type="text" name="name" id="myname"/><br/>
+            password : <input type="password" id="mypassword" /><br/>
+            re-password : <input type="password"  id="mypassword2"/><br/>
+            <input type="submit" value="refister"/>
+        </form>
+    </body>
+</html>

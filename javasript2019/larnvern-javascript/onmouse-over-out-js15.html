@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var tid = 0;
+            function over(el) {
+                el.innerHTML =  'onmouseenter is done'
+                clearTimeout(tid)
+            }
+            function out(el) {
+                el.innerHTML = 'onmouseleave done'
+
+                tid = setTimeout(function(){
+                    el.innerHTML = 'Mouse enter here'
+                }, 3000)
+            }
+
+            function reloadPage(){
+                document.getElementById("reverce").innerHTML = " Mouse enter here!!"
+            }
+        </script>
+    </head>
+    <body>
+        <h2>2.onmouseenter and onmouseleave event in js </h2>
+   
+        <div onmouseenter="over(this)" onmouseleave="out(this) " id="reverce">
+            Mouse enter here!!
+        </div>
+    </br>
+        <button type="button" onclick="reloadPage()">reset</button>
+
+    </body>
+    </html>

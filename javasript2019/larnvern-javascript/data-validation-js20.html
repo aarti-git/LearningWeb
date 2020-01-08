@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>data validation in js</title>
+    </head>
+    <body>
+        <script>
+            function validatemail(){
+                var name = document.getElementById("myname").value;
+                var x = document.getElementById("myemail").value;
+                var atposition = x.indexOf("@");
+                var dotposition = x.lastIndexOf(".");
+
+                if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+                    alert(" please ! enter valid email addres !!");
+                    return false;
+                }
+                else{
+                    alert("succsesfully ragisted " + name + "!!");
+                    return true;
+                }
+            }
+        </script>
+        <form onsubmit="return validatemail();">
+            Name : <input type="text" name="name" id="myname"/> <br/>
+            E-mail : <input type="text" name="email" id="myemail"/><br/>
+            <input type="submit" value="ragister"/>
+        </form> 
+    </body>
+</html>

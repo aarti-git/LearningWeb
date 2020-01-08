@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var i;
+            for(i=0;i<5;i++){
+                document.write(" * "+ "<br/>")
+            }
+            document.write("loop stoped !!")
+        </script>
+
+        <br/>
+        <br/>
+
+        <script>
+            var row = 5;
+            for(s=1; s<row; s++){
+
+                for(t=1; t<=(row-s); t++){
+                    document.write("#")
+                }
+                document.write("</br>")
+            }
+        </script>
+
+         <br/>
+         <br/>
+
+         <script>
+             var coll= 5;
+             for(p=0; p<coll; p++){
+                for(q=1; q<=(p+1); q++){
+                    document.write(" * ")
+                }
+                document.write("<br/>")
+             }
+         </script>
+    </head>
+
+    <body>
+        <script>
+            function loopfunction(rows,y){
+                var coll= rows;
+                for(p=0; p<coll; p++){
+                    for(q=1; q<=(p+1); q++){
+                        document.write(y)
+                    }
+                    document.write("<br/>")
+                }
+            }
+            loopfunction(5,'&')
+            loopfunction(10,"$")
+        </script>
+
+        <br/>
+        <br/>
+
+        <script>
+            function myhusband(a,b){
+                var row = a;
+                for(s=1; s<row; s++){
+
+                    for(t=1; t<=(row-s); t++){
+                        document.write(b + " ")
+                    }
+                    document.write("</br>")
+                }
+            }
+            myhusband(4,'yogesh')
+            myhusband(4,'aarti')
+
+        </script>
+        <p>trangel in for loop js</p>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>sort arrya js</head>
+    <body>
+    
+        <h1>sort arrya in alphabetic and numric</h1>
+        <button onclick="myFunction1()">alphabetically</button>
+        <button onclick="myFunction2()">numarically</button>
+        <p id="demo"></p>
+        <script>
+            var points = [40,100,1,5,25,10];
+            document.getElementById("demo").innerHTML = points;
+
+            function myFunction1(){
+                points.sort();
+                document.getElementById("demo").innerHTML = points;
+            }
+
+            function myFunction2(){
+                points.sort(function(a, b){return(a - b)});
+                document.getElementById("demo").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>

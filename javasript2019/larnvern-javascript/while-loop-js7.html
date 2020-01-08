@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> while loop statment in js</title>
+    </head>
+    <body>
+        <div>
+            <h1>while loop in js</h1>
+            <!--in the while loop browser first cheak condition and than exiqute the code. -->
+            <script>
+                var a=0;
+                while(a<5)
+                {
+                    document.write("Number : " + a + "<br/>");
+                    a++;
+                }
+                document.write("loop stoped");
+            </script>
+        </div>
+
+            <!--in the do-while loop browser fist exiqute the code and than cheak the condition.  -->
+        <div>   
+            <h1>do-while loop in js</h1>
+            <script>
+                var n=0;
+                do{
+                    document.write("Number : " + n + "<br/>");
+                    n++;
+                }
+                while(n<0);
+            </script>
+        </div>   
+
+
+            <!--foor loop-->
+        <div>   
+            <h1>for loop in js</h1>
+            <script>
+                var i;
+                for(i=0;i<5;i++)
+                {
+                    document.write("numbers" + i + "<br/>")
+                }
+                document.write("loop stoped");
+            </script>
+        </div>   
+
+
+            <!--for..in loop -->
+        <div>   
+            <h1>for ..in loop</h1>
+            <script>
+                var student =
+                {
+                    fname:"aarti",
+                    lname:"suryawanshi - ",
+                    age:22,
+                    bd:"- 11/2/1998 "};
+                    var x;
+                for(x in student){
+                    document.write(student[x] + " ");
+                }
+            </script>
+        </div>   
+
+
+            <!--loop cantrol in js-->
+        <div>
+            <h1>loop cantrol in js</h1>
+            <script>
+                var y;
+                for(y=0;y<10;y++)
+                {
+                    if(y===3)
+                    break;
+                    document.write(y + "<br/>")
+                }
+                document.write("loop aplyed");
+            </script>
+        </div>   
+        
+        <!-- continue loop-->
+        <div>
+        <h1>continue loop in js</h1>
+        <script>
+            var j=0;
+            while(j<5)
+            {
+                j=j+1;
+                if(j===3){
+                continue;
+                }
+                document.write(j + "<br/>");
+                
+            }
+            document.write("continue loop exiquted ");
+        </script>
+        </div>
+        
+
+        <!--lable in js-->
+        <div>
+            <h1>label in js</h1>
+            <p id="demo"></p>
+            <script>
+                var sname = ["aarti","yogesh", "kirti", "suraj","krishna","anaya"] ;
+                var text = "";
+                list:{
+                    text += sname[0] + "<br/>";
+                    text += sname[1] + "<br/>";
+                    text += sname[2] + "<br/>";
+                    text += sname[3] + "<br/>";
+                    text += sname[4] + "<br/>";
+                    break list;
+                    text += sname[5] + "<br/>";
+                }
+                    document.getElementById("demo").innerHTML = text;
+            </script>
+        </div>
+    
+    </body>
+</html>

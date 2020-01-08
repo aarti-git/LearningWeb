@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function in javascript</title>
+    </head>
+    <body onload=sayhii();>
+        <h2>function in js </h2>
+        <p>result is : alert- box on page </p>
+        <script>
+            function sayhii()
+            {
+                alert("hii..welcome to javascript function");
+            }
+        </script>
+
+        <div>
+            <h2>function in variabel</h2>
+            <p id="demo"></p>
+            <script>
+                function tometer(k)
+                {
+                    return k*1000;
+                }
+                var x = tometer(6);
+                document.getElementById("demo").innerHTML = 
+                "distance is " + x + " meters";
+            </script>
+        </div>
+
+        <div>
+            <h2>function in variabel</h2>
+            <p id="practical"></p>
+            <script>
+                var a = function (l){return l*1000};
+                var b =a(5);
+                document.getElementById("practical").innerHTML = 
+                "distance is " + b + " meters";
+            </script>
+        </div>
+    </body>
+</html> 

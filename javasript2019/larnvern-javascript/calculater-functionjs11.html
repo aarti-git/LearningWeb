@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculater using function in js</title>
+    </head>
+    <body style="margin: 30px;">
+        <form>
+            Enter First Number <input type="text" id="first"/> </br>
+            Enter Second Number <input type="text" id="second"/> </br>
+            <input type="button" onclick="addition()" value="addition"/>
+            <input type="button" onclick="minus()" value="mines"/>
+            <input type="button" onclick="multiply()" value="multiply"/>
+            <input type="button" onclick="divide()" value="divide"/>
+
+        </form>
+        <p>result : </p>
+        <span id="result" style="border: 1px solid red;padding: 5px 30px 5px;"></span>
+        </p>
+
+        <script>
+             function addition()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = parseInt(num1) + parseInt(num2);
+            }
+
+            function minus()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1-num2;
+            }
+            
+            function multiply()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1*num2;
+            }
+
+            function divide()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1/num2;
+            }
+        </script>
+    </body>
+</html>

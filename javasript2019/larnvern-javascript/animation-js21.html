@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animation in js</title>
+        <script type="text/javascript">
+            var x = null;
+            function changeIt()
+            {
+                x =document.getElementById("image");
+                x.style.position="relative";
+                x.style.left="0px";
+            }
+
+            function moveRight()
+                {
+                    x.style.left=parseInt(x.style.left) +20+'px';
+                }
+        
+            window.onload=changeIt;
+        
+        </script>
+    </head>
+    <body >
+        <p>animationin js</p>
+        <form>
+            <img id="image" style="width: 500px;"src="img/running-horse.jpg"><br/>
+            <input type="button" value="click me" onclick="moveRight();"/>
+        </form>
+    </body>
+</html>

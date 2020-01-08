@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var n = prompt("enter number");
+            trangel(n)
+
+            function trangel(input){
+
+                for(i=1; i<=input; i++){
+
+                    for(k=1; k<=(input-i); k++){
+                        document.write("&nbsp;");
+                    }
+                    
+                    for(j=1; j<=i; j++ ){
+                        document.write(" * ");
+                    }
+                    document.write("<br/>");
+                }
+            }
+
+        </script>
+        </br>
+    </br>
+        <script>
+            var rows=6;
+            for(var i=1; i<=rows; i++ ){
+                for(k=1; k<=(rows-i); k++){
+                    document.write("&nbsp;&nbsp;");
+                }
+            	for(var j=1; j<=i; j++){
+				document.write("*");
+			}
+            document.write("<br/>");
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

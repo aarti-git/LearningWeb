@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nesting function in js</title>
+        <script>
+                function first(x, y)
+                { 
+                    var name;
+                    name = x + y;
+                    return name;
+                }
+    
+                function second()
+                {
+                    var result;
+                    result = first ('aarti','suryawanshi') ;
+                    document.write = (result);
+                }
+            </script>
+    </head>
+    <body>
+        <h2>nesting function in js</h2>
+       
+        <form>
+            <input type="button" onclick="second()" value="click me">
+        </form>
+    </body>
+</html>

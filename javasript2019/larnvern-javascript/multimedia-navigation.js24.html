@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>multimedia plug-ins </title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>plug-ins name</th>
+                <th>file name</th>
+                <th>description</th>
+            </tr>
+            <script>
+                for(i=0;i<navigator.plugins.length; i++){
+                    document.write("<tr><td>");
+                    document.write(navigator.plugins[i].name);
+                    document.write("<td><td>");
+                    document.write(navigator.plugins[i].filename);
+                    document.write("<tr><td>");
+                    document.write(navigator.plugins[i].description);
+                    document.write("<tr><tr>");
+                }
+            </script>
+                
+        </table>
+    </body>
+</html>
