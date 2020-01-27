@@ -2,41 +2,62 @@
 <html>
     <head>
         <title> validation form </title>
+        <style type="text/css">
+            body{
+                border: 1px solid;
+                display: block;
+                margin:  0 auto;
+                width: 400px;
+                padding: 20px;
+                line-height: 35px;
+            }
+
+            .mystyle{
+                border: 2px solid red;
+            }
+        </style>
     </head>
     <body>
         <script>
             function formValidation()
             {
-                var name = document.getElementById("myname").value;
-                var password = document.getElementById("mypassword").value;
-                var secondpassword = document.getElementById("mypassword2").value;
+                var nameElement = document.getElementById("myname");
+                var name = nameElement.value;
+                var passwordElement = document.getElementById("mypassword");
+                var password = passwordElement.value;
+                var re_passwordElement = document.getElementById("mypassword2");
+                var password2 = re_passwordElement.value;
+               
 
+               
                 if (name==""){
-                    alert("Name can't be empty");
+                    nameElement.setAttribute('class','mystyle');
                     return false;
                 }
+
                 else if(password.length<4){
-                    alert("password must be 4 degit long");
+                    passwordElement.setAttribute('class','mystyle');
                     return false;
                 }
-                else if(password!==secondpassword){
-                    alert("password must be same");
+                else if(password!==password2){
+                   re_passwordElement.setAttribute('class','mystyle');
                     return false;
                    
                 }
                 else{
-                    alert("succsesfully ragisted !!" + " thank you "+ name + " !! ");
+                    alert("succsesfully register !!" + " thank you "+ name + " !! ");
                     return true;
                 }
                
             }
         </script>
+        
         <h2>validation form in js </h2>
-        <form onsubmit="return formValidation();">
+        <form onsubmit="return formValidation();" >
             Name : <input type="text" name="name" id="myname"/><br/>
             password : <input type="password" id="mypassword" /><br/>
             re-password : <input type="password"  id="mypassword2"/><br/>
-            <input type="submit" value="refister"/>
+            <input type="submit" value="register"/>
         </form>
     </body>
 </html>

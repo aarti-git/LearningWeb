@@ -6,7 +6,22 @@
 		<link rel="stylesheet" type="text/css" href="css/Glint-style.css">
 		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 		<script>
-			
+			function subscribe(){
+				alert(" Thank You For Subscribe !! ")
+			}
+			var counter=1;
+			function change(){
+				var review = document.getElementById("review");
+				var review2= document.getElementById("review2");
+				if(counter==1){
+					rewive.
+					counter=2
+				}
+				else if(counter==2){
+					rewive2.value
+					counter=3
+				}
+			}
 		</script>
 	</head>
 <body>
@@ -15,16 +30,16 @@
 			<div class="camand-page header">
 				<img src="img/logo.png"/>
 				<div class="menu">
-					<a> MANU </a>
+					<a> MENU </a>
 					<i class="fas fa-bars"></i>
 						<ul class="sub-menu">
-								<li>HOME </li>
-								<li>ABOUT </li>
-								<li>SERVICES</li>
-								<li>WOREK</li>
-								<li>CLIENTS</li>
-								<li>CONTACT</li>
-							</ul>
+							<li>HOME </li>
+							<li>ABOUT </li>
+							<li>SERVICES</li>
+							<li>WOREK</li>
+							<li>CLIENTS</li>
+							<li>CONTACT</li>
+						</ul>
 				</div>
 			</div>
 		</div>
@@ -189,12 +204,10 @@
 				<img class="clients-logo-img" src="img/firefox.png"/>
 			</div>
 			<div class="small-blog">
-				<input type="button"  value="Next" class="arrow-left" onclick="MyFunction()">
-				<p>	Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
-					Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-					Excepturi nam cupiditate culpa doloremque deleniti repellat.
-				</p>
-				<input type="button"  value="Next" class="arrow-right" onclick="MyFunction()";>
+				<input type="button"  value="Next" class="arrow-left" />
+				<p id="review">	Qui ipsam temporibus quisquam vel. </p>
+				<p id="review2">	Qui ipsam temporibus. </p>
+				<input type="button"  value="Next" class="arrow-right" onclick="change()"/>
 				<img class="user-img" src="img/user-01.jpg"/>
 				<h3>Tim Cook </h3>
 				<h4>CEO, Apple</h4>
@@ -268,11 +281,6 @@
 					Ut itaque enim optio ut excepturi deserunt iusto porro.
 				</p>
 				<i class="far fa-envelope"> Email Address</i>
-				<script>
-					function subscribe(){
-						alert("THANK YOU FOR SUBSCRIBE")
-					}
-				</script>
 				<button type="text" onclick="subscribe()">SUBSCRIBE</button>
 			</div>
 			<div class="footer-end">

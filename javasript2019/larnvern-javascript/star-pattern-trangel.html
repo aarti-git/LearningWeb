@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+     <script>
+            var n=5;
+            for(i=1; i<n; i++){
+                for(j=1;j<n; j++){
+                    if( i+j==(n-1)|| i-j==(n-2)||i==4){
+                        document.write(" * ");
+                    }
+                    else{
+                        document.write("&nbsp;");
+                    }
+                }
+                document.write("<br/>");
+            }
+        </script>
+        <br/>
+         <!--pattern of /\-->   
+        <script>
+            var n=5;
+            var pi=n;
+            var pj=n
+            for(i=0; i<n; i++){
+                for(j=1;j<n*2; j++){
+                    if(j==pi || j==pj ){
+                        document.write(" * ");
+                    }
+                    else{
+                        document.write(" &nbsp; ");
+                    }
+                }
+                pi--;
+                pj++;
+                document.write("<br/>");
+            }
+        </script>
+        <br/>
+        <script>
+            var n=10;
+            var pi=n;
+            var pj=n
+            for(i=0; i<n; i++){
+                for(j=1;j<n*2; j++){
+                    if(j==pi || j==pj ){
+                        document.write(i);
+                    }
+                    else{
+                        document.write(" &nbsp; ");
+                    }
+                }
+                pi--;
+                pj++;
+                document.write("<br/>");
+            }
+        </script>
+        </br>
+        </br>
+    <!--pattern of v-->   
+        <script>
+            var n=5;
+            var pi=1;
+            var pj=n*2-1;
+            for(i=0; i<n; i++){
+                for(j=1;j<n*2; j++){
+                    if(j==pi || j==pj ){
+                        document.write(" * ");
+                    }
+                    else{
+                        document.write(" &nbsp; ");
+                    }
+                }
+                pi++;
+                pj--;
+                document.write("<br/>");
+            }
+        </script>
+        <br/>
+        <br/>
+        <script>
+            var n=5;
+            var pi=1;
+            var pj=n*2-1;
+            for(i=0; i<n; i++){
+                for(j=1;j<n*2; j++){
+                    if(j==pi || j==pj ){
+                        document.write(j);
+                    }
+                    else{
+                        document.write(" &nbsp; ");
+                    }
+                }
+                pi++;
+                pj--;
+                document.write("<br/>");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>star pattern trangel</h2>
+    </body>
+</html>

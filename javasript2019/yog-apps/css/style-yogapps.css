@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.intro-part1{
+    display: inline-block;
+    width: 300px;
+}
+.logo-img{
+    width: 100px;
+}
+.summary{
+    float: right;
+}

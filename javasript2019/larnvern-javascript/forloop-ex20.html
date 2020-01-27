@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            var rows=3;
-            var space= "&nbsp;";
-            for(i=1; i<=rows; i++){
-
-                for(k=1; k<=(i-1); k++){
-                    document.write(space);
-                }
-                for(j=1; j<=1; j++){
+      <script>
+          var row = prompt("Enter your number ");
+          // cross pattern "x"
+            for(i=0; i<row; i++){
+              for(j=0; j<row; j++){
+                  if(i==j || i+j==row-1){
                     document.write("*");
-                }
-                for(m=1;m<=(rows-i); m++){
-                    document.write(space);
-                }
-                for(l=1; l<=1; l++){
-                    document.write("*");
-                }
-                document.write("<br/>");
+                  }
+                  else{
+                    document.write("&nbsp;");
+                  }
+              }
+              document.write("<br/>")
             }
-        </script>
+      </script>
     </head>
     <body>
-
+     <p>star patterns</p>
+     <p>x , \ , + , </p>
     </body>
 </html>

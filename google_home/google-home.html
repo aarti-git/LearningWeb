@@ -19,6 +19,36 @@
 				document.querySelector('.overlay-form').style.display='none';
 			}
 		</script>
+<!-- practice of programing.....find images using js-->
+		<script>
+		
+			function myimg(){
+				var allimg = document.querySelectorAll('img');
+
+				for(i=0; i<allimg.length; i++){
+					var image = allimg[i]
+					var cal = image.getAttribute('class')
+					if(cal && cal.includes('google')){
+						console.log(cal)
+						console.log(image)
+					}
+				}
+
+			}
+		
+			function findlink(){
+				var allanchors = document.querySelectorAll('i');
+
+				for(j=0; j<allanchors.length; j++){
+					var anchors = allanchors[j]
+					var find = anchors.getAttribute('class')
+					if(find && find.includes('-v')){
+						console.log(anchors)
+					}
+				}
+			}
+		</script>
+	<!--end of script-->
 	</head>
 <body>
 	<section class="camand-google">
