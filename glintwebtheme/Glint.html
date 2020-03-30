@@ -6,20 +6,28 @@
 		<link rel="stylesheet" type="text/css" href="css/Glint-style.css">
 		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 		<script>
-			function subscribe(){
-				alert(" Thank You For Subscribe !! ")
-			}
-			var counter=1;
-			function change(){
-				var review = document.getElementById("review");
-				var review2= document.getElementById("review2");
-				if(counter==1){
-					rewive.
-					counter=2
+			function testAnchors(){
+				var allanchors = document.querySelectorAll('a');
+
+				for(i=0; i<allanchors.length; i++){
+					var anchors = allanchors[i];
+					var find = anchors.getAttribute('href');
+					if(find && find.includes('http:')){
+						console.log(anchors)
+						
+					}
 				}
-				else if(counter==2){
-					rewive2.value
-					counter=3
+			}
+			// find images
+			function testimg(){
+				var allimg = document.querySelectorAll('img');
+
+				for(j=0; j<allimg.length; j++){
+					var images=allimg[j]
+					var findimg = images.getAttribute('src')
+					if(findimg && findimg.includes('logo')){
+						console.log(images)
+					}
 				}
 			}
 		</script>
@@ -56,10 +64,10 @@
 					</span>
 				</div>
 				<div class="follw-us-font">
-					<a href="facebook.com" class="fab fa-facebook-f"></a>
-					<a href="" class="fab fa-twitter"></a>
-					<a href="" class="fab fa-pinterest"></a>
-					<a href="" n="" class="fab fa-google-plus"></a>
+					<a href="http://facebook.com" class="fab fa-facebook-f"></a>
+					<a href="http://twitter.com" class="fab fa-twitter"></a>
+					<a href="http://pinterest.com" class="fab fa-pinterest"></a>
+					<a href="http://google.com" n="" class="fab fa-google-plus"></a>
 				</div>
 			</div>
 		</div>

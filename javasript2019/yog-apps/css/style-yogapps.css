@@ -4,13 +4,134 @@
     border: 0;
     box-sizing: border-box;
 }
+.demo{
+   display:table;
+   width: 100%;
+}
 .intro-part1{
-    display: inline-block;
+    float: left;
     width: 300px;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 5px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    
 }
 .logo-img{
     width: 100px;
+    position: relative;
+    left: 180px;
 }
 .summary{
     float: right;
+    margin-top: 100px;
+}
+
+.summary ul{
+    padding: 5px;
+}
+
+.summary li a:active{
+    color: red;
+}
+
+.summary li:hover{
+    color: black;
+}
+
+.summary li{
+    list-style: none;
+    color: #545151;
+    margin: 20px 0px 20px 80px;
+}
+
+.summary span::before{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    border: 1px solid wheat ;
+    background-image: linear-gradient(to right, white, black);
+    
+}
+
+/* section 2 css*/
+.smooth-scrollin{
+    width: 100%;
+    height: calc(100vh);
+    scroll-behavior: smooth;
+    overflow-y: scroll ;
+}
+.intro-part2{
+    width: calc(100% - 300px);
+    margin-left: auto;
+}
+
+.logo{
+    transform: translate(0, 50%);
+    margin-top: 50px;
+    margin-bottom: 30%;
+    text-align: center;
+
+}
+.logo-paje{
+    text-align: center;
+}
+.logo-paje h3{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: normal;
+    line-height: 70px;
+}
+.logo-paje p{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* part 3 css*/
+.intro-part3{
+    width: calc(100% - 300px);
+    margin-left: auto;
+}
+
+.logo-part3{
+    transform: translate(0, 50%);
+    margin-top: 50px;
+    margin-bottom: 20%;
+    text-align: center;
+
+}
+.logo-paje-3{
+    text-align: center;
+}
+.logo-paje-3 h3{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: normal;
+    line-height: 70px;
+}
+.logo-paje-3 p{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.about-me{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-me p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: cursive;
+    margin-bottom: 15%;
+}
+.about-me p::first-letter{
+    font-size: 50px;
+    color: red;
+    
 }

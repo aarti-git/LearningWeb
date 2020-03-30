@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .graph-container {
+        width: 500px;
+        height: 500px;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        margin: 50px;
+        position: relative;
+        background-image: url(img/graph-bg.png);
+      }
+
+      /* Y-axis css */
+      .line-position-Y {
+        position: absolute;
+        bottom: -1px;
+        left: -5px;
+      }
+      .point-distance {
+        display: block;
+        width: 4px;
+        height: 1px;
+        background-color: black;
+        margin-bottom: 49px;
+        position: relative;
+      }
+      .point-distance::after {
+        content: attr(data-point);
+        position: absolute;
+        right: 100%;
+        top: -6px;
+        margin-right: 4px;
+        font-size: 9px;
+        background: #c7c7c7;
+        padding: 1px 4px;
+        border: 1px solid #a9a9a9;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+      /* x-axis css */
+      .line-position-X {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+
+      .point-distance-x {
+        display: inline-block;
+        width: 1px;
+        height: 4px;
+        background-color: black;
+        margin-left: 49px;
+        float: left;
+      }
+
+      .point-distance-x::before {
+        content: attr(data-point);
+        position: absolute;
+        font-size: 10px;
+        background: #c7c7c7;
+        padding: 1px 4px;
+        border: 1px solid #a9a9a9;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+        top: 15px;
+        transform: translate(-50%, -50%);
+      }
+      /* data information css */
+      .data-information {
+      }
+      .data-point {
+        width: 7px;
+        height: 7px;
+        background-color: black;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: -3.5px; /*width % 2== 7/2=3.5*/
+        margin-bottom: -3.5px;
+        transition: bottom 0.5s;
+      }
+      .data-point-position1 {
+        left: 50px;
+        bottom: 100px;
+      }
+      .data-point-position2 {
+        left: 100px;
+        bottom: 150px;
+      }
+      .data-point-position3 {
+        left: 150px;
+        bottom: 150px;
+      }
+      .data-point-position4 {
+        left: 200px;
+        bottom: 200px;
+      }
+      .data-point-position5 {
+        left: 250px;
+        bottom: 150px;
+      }
+      .data-point-position6 {
+        left: 300px;
+        bottom: 200px;
+      }
+      .data-point-position7 {
+        left: 350px;
+        bottom: 250px;
+      }
+
+      .data-point-position8 {
+        left: 400px;
+        bottom: 300px;
+      }
+      .data-point-position9 {
+        left: 450px;
+        bottom: 250px;
+      }
+      /* graph point conect with line css */
+      .graph-line {
+        display: none;
+      }
+      .point-conecters-main {
+        display: block;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+      }
+      .point-conecter1 {
+        width: 108px;
+        bottom: 48px;
+        left: -30px;
+        transform: rotate(-63deg);
+      }
+      .point-conecter2 {
+        width: 64px;
+        bottom: 124px;
+        left: 43px;
+        transform: rotate(-45deg);
+      }
+      .point-conecter3 {
+        width: 44px;
+        bottom: 148px;
+        left: 103px;
+        transform: rotate(0deg);
+      }
+      .point-conecter4 {
+        width: 64px;
+        bottom: 174px;
+        left: 143px;
+        transform: rotate(-45deg);
+      }
+      .point-conecter5 {
+        width: 64px;
+        bottom: 174px;
+        left: 193px;
+        transform: rotate(45deg);
+      }
+      .point-conecter6 {
+        width: 64px;
+        bottom: 174px;
+        left: 243px;
+        transform: rotate(-45deg);
+      }
+      .point-conecter7 {
+        width: 64px;
+        bottom: 224px;
+        left: 293px;
+        transform: rotate(-45deg);
+      }
+      .point-conecter8 {
+        width: 64px;
+        bottom: 274px;
+        left: 343px;
+        transform: rotate(-45deg);
+      }
+      .point-conecter9 {
+        width: 64px;
+        bottom: 274px;
+        left: 393px;
+        transform: rotate(45deg);
+      }
+    </style>
+    <script>
+      function changeYaxis() {
+        var AllYaxis = document.getElementsByClassName("data-point");
+
+        for (i = 0; i < AllYaxis.length; i++) {
+          var myYaxis = AllYaxis[i];
+          myYaxis.style.bottom = Math.random() * 400 + "px";
+        }
+      }
+
+      /* function dataLine(){
+         var width=50;
+         var height = dot-position- width
+             height = 119.423 - 50 ;
+             height= 69.423
+
+         digonal= d = w2 + l2 .Math.sqrt
+                 d= 50*50 + 69.423* 69.423 = 7319.552929;
+                 Math.sqrt(7319.552929)= 85.55438579640439
+
+      }*/
+    </script>
+  </head>
+  <body>
+    <h3>line Graph</h3>
+    <div class="graph-container">
+      <div class="line-position-Y">
+        <span class="point-distance" data-point="450"></span
+        ><span class="point-distance" data-point="400"></span
+        ><span class="point-distance" data-point="350"></span
+        ><span class="point-distance" data-point="300"></span
+        ><span class="point-distance" data-point="250"></span
+        ><span class="point-distance" data-point="200"></span
+        ><span class="point-distance" data-point="150"></span
+        ><span class="point-distance" data-point="100"></span
+        ><span class="point-distance" data-point="50"></span>
+      </div>
+
+      <div class="line-position-X">
+        <span class="point-distance-x" data-point="50"></span>
+        <span class="point-distance-x" data-point="100"></span>
+        <span class="point-distance-x" data-point="150"></span>
+        <span class="point-distance-x" data-point="200"></span>
+        <span class="point-distance-x" data-point="250"></span>
+        <span class="point-distance-x" data-point="300"></span>
+        <span class="point-distance-x" data-point="350"></span>
+        <span class="point-distance-x" data-point="400"></span>
+        <span class="point-distance-x" data-point="450"></span>
+      </div>
+      <div class="data-information">
+        <span class="data-point-position1 data-point"></span>
+        <span class="data-point-position2 data-point"></span>
+        <span class="data-point-position3 data-point"></span>
+        <span class="data-point-position4 data-point"></span>
+        <span class="data-point-position5 data-point"></span>
+        <span class="data-point-position6 data-point"></span>
+        <span class="data-point-position7 data-point"></span>
+        <span class="data-point-position8 data-point"></span>
+        <span class="data-point-position9 data-point"></span>
+      </div>
+      <div class="graph-line">
+        <span class="point-conecter1 point-conecters-main"></span>
+        <span class="point-conecter2 point-conecters-main"></span>
+        <span class="point-conecter3 point-conecters-main"></span>
+        <span class="point-conecter4 point-conecters-main"></span>
+        <span class="point-conecter5 point-conecters-main"></span>
+        <span class="point-conecter6 point-conecters-main"></span>
+        <span class="point-conecter7 point-conecters-main"></span>
+        <span class="point-conecter8 point-conecters-main"></span>
+        <span class="point-conecter9 point-conecters-main"></span>
+      </div>
+    </div>
+    <div>
+      <button onclick="changeYaxis();">change Y axis</button>
+    </div>
+  </body>
+</html>
