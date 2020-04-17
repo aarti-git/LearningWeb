@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>data type and variables</title>
+        <script>
+                function myFunction(){
+                    var fname = prompt("enter your first name");
+                    var lname = prompt("enter your last name");
+                    var city = prompt("enter your city name");
+                    var contact = prompt("enter your mobile no");
+               
+                    if(fname!=null){
+                     alert("hello" + " " + fname + " " + lname );
+                    }
+        
+                    document.getElementById("demo").innerHTML = 
+                    "hello " + fname + "  your details are : " + "<br>" +
+                    "last name : " + lname + "<br>" +
+                    "city name : " + city + "<br>" +
+                    "contact no : " + contact ;
+                }
+                </script>
+    </head>
+    <body onload="myFunction()">
+        <h2>data types and variables</h2>
+        <p id="demo"></p>
+    </body>
+</html>

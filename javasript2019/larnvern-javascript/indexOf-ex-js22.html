@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>indexOf examples in js</tittle>
+    </head>
+    <body onload= "latter();">
+        <p> NAME: aarti yogesh jagdale</p>
+        
+        <p> 1 : how many latters in the name </p>
+        <p id="result"></p>
+
+        <p > 2 : name index of "j"</p>
+        <p id="nameindex"></p>
+
+        <p> 3 : how much time of "a" in the name</p>
+        <p id="alatter"></p>
+
+        <script>
+
+            function latter()
+            {
+                var x= "aarti yogesh jagdale";
+                var n=  document.getElementById("result").innerHTML = x.length;
+
+                var calindex= x.indexOf("j");
+                document.getElementById("nameindex").innerHTML=calindex;
+
+            }
+          
+            function count(string,char) {
+                var re = new RegExp(char,"gi");
+                return string.match(re).length;
+                }
+
+                var str = "aarti yogesh jagdale";
+                document.getElementById("alatter").innerHTML= count(str,'a');
+        </script>
+    </body>
+</html>

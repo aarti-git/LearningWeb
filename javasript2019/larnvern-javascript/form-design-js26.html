@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                border:0;
+                box-sizing: border-box;
+            }
+            .myform{
+                display: block;
+                margin:0 auto;
+                width: 700px;
+                border: 1px solid gray;
+                background-image:url(img/flowers-and-wood-background-9.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-sizing: border-box;
+               
+            }
+
+            .formcss{
+                margin: 20px 0 20px;
+            }                
+            
+            .myform h1{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 40px;
+                font-weight: normal;
+                font-family: cursive;
+
+            }
+
+            .myform input{
+                width: 240px;
+                line-height: 25px;
+                padding: 2px;
+
+            }
+
+            .information {
+                margin-left: 85px;
+            }
+
+            #mygender{
+                width: 20px;
+            }
+            
+            #submit:hover {
+                background-color: #e82025;
+                color: white;
+            }
+
+            #submit{
+                font-size: 18px;
+                padding: 5px 0 5px;
+                width:140px;
+                color: red;
+            }
+        </style>
+        <script>
+            function formvalid()
+            {
+                var fname = document.getElementById("myfname").value;
+                var lname = document.getElementById("mylname").value;
+                var email = document.getElementById("myemail").value;
+                var x= email.indexOf("@");
+                var mobileNo = document.getElementById("mymobile").value;
+                var password = document.getElementById("mypassword").value;
+                var secondpassword = document.getElementById("mypassword2").value;
+                var country = document.getElementById("mycountry").value;
+                var  birthdate = document.getElementById("birthdate").value;
+              //  var gender = document.myform.gender;
+                var gender = myform.querySelectorAll('input[name="gender"]:checked');
+                var Language = myform.querySelectorAll('input[name="lang"]:checked');
+               
+            //    var a = document.querySelectorAll('[name=gender]');
+             //   for(var i=0; i<a.length; i++){
+              //          (a[i].checked);
+              //      alert("please select gender");
+              //  }
+
+
+                if (fname=="" || lname==""){
+                    alert("Name can't be empty");
+                    return false;
+                }
+                else if(x<3){
+                    alert(" please ! enter valid email addres !!");
+                    return false;
+                }
+                else if(mobileNo.length<10){
+                    alert(" Mobile Number must be 10 digits !!")
+                    return false;
+                }
+                else if(country==""){
+                    alert("please ..select your country");
+                    return false;
+                }
+
+                else if(birthdate==""){
+                    alert("Please... fill your birth date");
+                    return false;
+                }
+
+                else if (!gender.length) {
+                    alert('You must select male or female');
+                    return false;
+                }
+
+                else if(!Language.length){
+                    
+                    alert("you must be select language ");
+                    return false;
+                }
+               
+                else if(password.length<4){
+                    alert("password must be 4 degit long");
+                    return false;
+                }
+                else if(password!==secondpassword){
+                    alert("password must be same");
+                    return false;  
+                }
+
+                else{
+                    alert("succsesfully ragisted !!" + " thank you "+ fname + lname + " !! ");
+                    return true;
+                }
+                
+            }
+            function mykey()
+            {
+                var x = document.getElementById("myfname");
+                x.value = x.value. toUpperCase();
+                var x2 = document.getElementById("mylname");
+                x2.value = x2.value .toUpperCase();
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="myform">
+            <div class="formcss">
+                <h1> Form Design</h1>
+                <form  onsubmit="return formvalid();" class="information" name="myform">
+                    First Name :<br/>
+                    <input type="text" name="name" id="myfname" onkeydown="mykey()"/><br/><br/>
+                    Last Name  :<br/>
+                    <input  type="text" name="name" id="mylname" onkeydown="mykey()"/><br/><br/>
+                    Email      :<br/>
+                    <input type="email" id="myemail"/><br/><br/>
+                    Mobile No  :<br/>
+                    <input type="number" id="mymobile"/><br/><br/>
+                    Contry :<br/>
+                    <select id="mycountry">
+                        <option value="">Select your country</option>
+                        <option value="us">US</option>
+                        <option value="uk">UK</option>
+                        <option value="india">India</option>
+                        <option value="south africa">south africa</option>
+                    </select>
+                    <br/><br/>
+                    Birth Date :<br/>
+                    <input type="date"   id="birthdate" /> 
+                   <br/></br>
+                    Gender :<br/>
+                    <input type="radio" name="gender" value="male" id="mygender"/>Male 
+                    <input type="radio" name="gender" value="female" id="mygender"/>Female
+                    <br/><br/>
+                    Language : <br/>
+                    <input type="checkbox" name='lang' value="english" id="mygender"/>English
+                    <input type="checkbox" name='lang' value="hindi" id="mygender"/>Hindi
+                    <input type="checkbox" name='lang' value="marathi" id="mygender"/>Matathi
+                    <br/></br/>
+                    Attach Filles :<br/>
+                    <input type="file"/><br/><br/>
+                    Password   :<br/>
+                    <input  type="password" id="mypassword"/><br/><br/>
+                    re-password : <br/>
+                    <input type="password"  id="mypassword2"/><br/></br>
+
+                    <input type="submit" value="SUBMIT" id="submit"/>
+                    <input type="reset" value="RESET" id="submit"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

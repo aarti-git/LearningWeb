@@ -17,7 +17,9 @@
 	.header-fix{
 		position:fixed;
 		z-index: 1;
-		left: 90px;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
 	}
 	
 	.header{

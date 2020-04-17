@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>typeof native object </title>
+    </head>
+    <body>
+        <h2>typeof native object in js</h2>
+        <p id="nativeobject"></p>
+        <script>
+            var x1 = "";
+            var x2 = {} ;
+            var x3 = true ;
+            var x4 = 0;
+            var x5 = function(){};
+            
+            document.getElementById("nativeobject").innerHTML =
+            "x1 = " + typeof x1 + "<br/>" +
+            "x2 = " + typeof x2 + "<br/>" +
+            "x3 = " + typeof x3 + "<br/>" +
+            "x4 = " + typeof x4 + "<br/>" +
+            "x5 = " + typeof x5 + "<br/>";
+           
+        </script>
+        <div>
+            <button type="button" onclick=" document.getElementById('displaytime').innerHTML = Date();">
+                click for time </button>
+            <p id="displaytime"></p>
+        </div>
+
+    </body>
+</html>

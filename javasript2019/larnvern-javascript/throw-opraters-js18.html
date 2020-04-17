@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>throw oppratesr in js</title>
+       
+    </head>
+    <body>
+        <h2>throw oppratesr in js</h2>
+        <p>input number between 5 to 10</p>
+
+        <input id="uservalue" type="text">
+        <button type="button" onclick="inputthrow()" >result</button>
+
+        <p id="message"></p>
+       
+
+        <script>
+            function inputthrow(){
+                var message , x;
+                message = document.getElementById(message);
+                message.innerHTML = " " ;
+                x = document.getElementById("uservalue").value;
+
+                try {
+                    if(x == "")     throw "empty space";
+                    if(isNaN(x))    throw " it is not a number";
+                    x = Number(x);
+                    if(x < 5 )      throw "it is to low";
+                    if(x > 10 )     throw "it is to high";
+                }
+                catch(err) {
+                    message.innerHTML = "input" + err;
+                }
+                finally{
+                    document.getElementById("uservalue").value="";
+                }
+            }
+        </script>
+    </body>
+</html>

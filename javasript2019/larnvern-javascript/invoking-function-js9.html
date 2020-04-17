@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> invoking function in javascript </title>
+    <script>
+        function sayHello(name,age)
+        {
+            document.write("my name is " + name + " and i am  " + age + " year old.")
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>1.invoking function</h2>
+        <form>
+            <input type="button" onclick="sayHello('aarti',22)"
+            value="say Hello"> 
+        </form> 
+    </div> 
+
+     <div>
+         <h2>2 .invok function as function</h2>
+         <p id="demo"></p>
+         <script>
+             function hello(a,b)
+             {
+                 return a*b;
+             }
+             document.getElementById("demo").innerHTML= hello(2,8);
+
+         </script>
+     </div>
+
+     <div>
+         <h2>3.invoking function as method</h2>
+        <p id="end"></p>
+        <script>
+            var myName = {
+                firstName : "aarti",
+                lastName : "suryawanshi",
+                fullName : function() {
+                    return this.firstName + " " + this.lastName ;
+                }
+            }
+            document.getElementById("end").innerHTML =
+            myName.fullName();
+        </script>
+     </div>
+</body>
+</html>

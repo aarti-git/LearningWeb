@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+          var row = prompt("Enter your number ");
+          // cross pattern "x"
+            for(i=0; i<row; i++){
+              for(j=0; j<row; j++){
+                  if(i==j || i+j==row-1){
+                    document.write("*");
+                  }
+                  else{
+                    document.write("&nbsp;");
+                  }
+              }
+              document.write("<br/>")
+            }
+      </script>
+    </head>
+    <body>
+     <p>star patterns</p>
+     <p>x , \ , + , </p>
+    </body>
+</html>

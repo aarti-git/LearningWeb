@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+       <select id="myselect" onchange="myfunction()" >
+           <option value="red" style="color: red;">red</option>
+            <option value="pink" style="color: pink;">pink</option>
+            <option value="green" style="color: green;">green</option>
+            <option value="yellow" style="color:yellow;">yellow</option>
+            <option value="blue" style="color: blue;">blue</option>
+       </select>
+       <p id="demo" style="color:red;font-size: 20px;"></p>
+       <script>
+           function myfunction()
+           {
+               var x = document.getElementById("myselect").value;
+               document.getElementById("demo").innerHTML =
+                "you selected " + x;
+           }
+       </script>
+    </body>
+</html>

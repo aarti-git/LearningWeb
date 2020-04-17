@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style tyep="text/css">
+      * {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .amountform {
+        margin-top: 30px;
+      }
+      .myform {
+        padding: 30px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid goldenrod;
+      }
+
+      #ball-design {
+        position: relative;
+        width: 500px;
+      }
+
+      .ball {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      .rectangle {
+        position: fixed;
+        width: 50px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <div class="amountform">
+      <form class="myform">
+        <input type="number" name="Enter Number" id="ballAmount" />
+        <input type="button" value="Submit" onclick="ballGame();" />
+        <input type="button" value="Clear Ball's" onclick="clearBall();" />
+      </form>
+    </div>
+    <div id="ball-design"></div>
+
+    <script>
+      function ballGame(h = window.innerHeight, w = window.innerWidth) {
+        var amountball = document.getElementById("ballAmount");
+        var n = amountball.value;
+        var height = h;
+        var width = w;
+
+        for (i = 1; i <= n; i++) {
+          var shape = document.createElement("span");
+          document.getElementById("ball-design").appendChild(shape);
+          var type;
+
+          if (i % 2 == 0) {
+            shape.classList.add("ball");
+            type = "ball";
+          } else {
+            shape.classList.add("rectangle");
+            type = "rectangle";
+          }
+
+          var top = Math.random() * height;
+          var left = Math.random() * width;
+          var ballHeight = 30;
+          var rectWidth = 50;
+          var rectheight = 20;
+          if (type == "ball") {
+            if (left + ballHeight > width) {
+              left = adjustPosition(left, ballHeight, width);
+            }
+            if (top + ballHeight > height) {
+              top = adjustPosition(top, ballHeight, height);
+            }
+          } else {
+            if (left + rectWidth > width) {
+              left = adjustPosition(left, rectWidth, width);
+            }
+            if (top + rectheight > height) {
+              top = adjustPosition(top, rectheight, height);
+            }
+          }
+
+          shape.style.top = top + "px";
+          shape.style.left = left + "px";
+
+          var bgcolor = getRandomColorCode();
+          shape.style.backgroundColor = bgcolor;
+        }
+      }
+
+      function getRandomColorCode() {
+        var arr = [
+          "red",
+          "green",
+          "yellow",
+          "pink",
+          "purple",
+          "violet",
+          "aqua",
+          "deeppink",
+          "black",
+          "blue"
+        ];
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      function clearBall() {
+        var allBalls = document.querySelectorAll(".ball");
+        allBalls.forEach(function(el) {
+          el.remove();
+        });
+
+        var allsqare = document.querySelectorAll(".rectangle");
+        allsqare.forEach(function(el) {
+          el.remove();
+        });
+      }
+
+      function adjustPosition(pos, bhw, xy) {
+        return pos - (pos + bhw - xy);
+      }
+
+      function setLeftTop(el, l, t) {
+        el.style.top = t + "px";
+        el.style.left = l + "px";
+      }
+    </script>
+  </body>
+</html>

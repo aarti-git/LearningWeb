@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculater using function in js</title>
+        <script>
+            function addcss(){
+                var allinput = document.querySelectorAll('input')
+
+                for(i=0; i<allinput.length; i++){
+                    var myinput = allinput[i]
+                    var cal = myinput.getAttribute('id')
+
+                    if(cal && cal.includes('first') ){
+                        //myinput.style.color="red";
+                        myinput.setAttribute('style','color:red')
+                    }
+
+                    if(cal && cal.includes('second')){
+                        myinput.style.color="blue";
+                    }
+                }
+            }
+
+            function myfunction(x,y){
+
+                console.log(x);
+                console.log(y);
+            }
+            myfunction(["aarti"],"yogesh")
+            myfunction(true, false)
+            myfunction(123123,3434)
+        </script>
+        
+    </head>
+    <body style="margin: 30px;border: 1px solid;
+                width: 400px;
+                text-align: center;
+                padding: 10px;display: block;margin: 0 auto;">
+        <h1>Calculator</h1>
+        <form onkeydown="addcss()">
+            Enter First Number <input type="number" id="first" /> </br><br/>
+            Enter Second Number <input type="number" id="second"/> </br><br/>
+            <input type="button" onclick="addition()" value="addition"/>
+            <input type="button" onclick="minus()" value="mines"/>
+            <input type="button" onclick="multiply()" value="multiply"/>
+            <input type="button" onclick="divide()" value="divide"/>
+
+        </form>
+        <p>result : </p>
+        <span id="result" style="border: 1px solid red;padding: 5px 30px 5px;"></span>
+        </p>
+
+        <script>
+             function addition()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = parseInt(num1) + parseInt(num2);
+            }
+
+            function minus()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1-num2;
+            }
+            
+            function multiply()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1*num2;
+            }
+
+            function divide()
+            {
+                num1= document.getElementById("first").value;
+                num2= document.getElementById("second").value;
+                document.getElementById("result").innerHTML = num1/num2;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+            <h2>1.onsubmit event in js</h2>
+            <form onsubmit="myFunction()">
+                Enter Name : <input type="text" name="value" id="myname"/>
+                <input type="submit" value="submit"/>
+            </form>
+            <script>
+               
+                function myFunction()
+                {
+                    var x = document.getElementById("myname").value;
+                    alert("hello " + x + " ...successfully submit form !! ");
+                }
+            </script>
+
+         <!-- event onkeydown-->   
+            <div>
+                <h2>2.onkeydown event in js</h2>
+                <p>keypress latter convert in to uppercase </p>
+                Enter Name : <input type="text" onkeydown="mykey()" id="fname"/>
+                <script>
+                    function mykey(){
+                        var x= document.getElementById("fname");
+                        x.value = x.value .toUpperCase();
+                    }
+                </script>
+            </div>
+    </body>
+</html>
