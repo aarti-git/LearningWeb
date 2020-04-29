@@ -52,13 +52,60 @@
         n.style.display = isShow ? "block" : 'none';
       }
     </script>
+
+    <script>
+     /* function myFunctio() {
+        var menuButton = document.getElementById("myButton");
+        var list = document.querySelector(".mobile-menu-list");
+
+        if (list.style.display === "none") {
+          menuButton.classList.add("menu-cut-bar");
+          list.style.display = "block"
+          console.log("one");
+        }
+        else {
+          menuButton.classList.remove("menu-cut-bar");
+         list.style.display = "none"
+          console.log("two");
+        }
+      }*/
+      var isCliked = false;
+      
+      function myFunctio(){
+        // 
+        var menuButton = document.querySelector(".click-button");
+        var list = document.querySelector(".mobile-menu-list");
+
+        if(isCliked == false){
+          menuButton.classList.add("menu-cut-bar");
+          list.style.display="block";
+          console.log("one");
+          isCliked=true;
+        }else{
+          menuButton.classList.remove("menu-cut-bar");
+          list.style.display = "none";
+          console.log("two");
+          isCliked = false;
+        }
+      }
+    </script>
+    <script>
+      function textOpycity(){
+        var x = document.querySelectorAll(".textopycity");
+        var i;
+        for(i=0; i<x.length; i++){
+          x[i].style.opacity = "1";
+        }
+        }
+       
+    </script>
   </head>
-  <body>
+  <body onload="textOpycity()">
     <section>
       <div class="header">
         <div class="allabout-company-logo">
           <img class="company-logo-img" src="img/law-logo-img.webp" />
-          <p>KNOLL & WALTERS LLP</p>
+          <p>KNOLLWALTERS LLP</p>
         </div>
         <div class="header-points">
           <ul>
@@ -69,14 +116,30 @@
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
+        <div class="mobile-menu-button">
+          <button  onclick="myFunctio()" class="click-button">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </button>
+        </div>
+      <div class="mobile-menu-list">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="#practice-area">PRACTIC AREA</a></li>
+              <li><a href="#our-vision">OUR VISION</a></li>
+              <li><a href="#attorneys">ATTORNEYS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
       </div>
     </section>
     <section class="website-bg">
       <div class="company-name">
-        <div class="name-formating">
+        <div class="name-formating textopycity">
           <h2>BOUTIQUE</h2>
           <h3>LAW FIRM</h3>
-          <p>Specializing in Commercial Law & Litigation,</br> Insolvency & Fraud</p>
+          <p>Specializing in Commercial Law & Litigation,Insolvency & Fraud</p>
         </div>
       </div>
     </section>
@@ -89,7 +152,7 @@
           </span>
         </div>
 
-        <div class="info-practice-area">
+        <div class="info-practice-area textopycity">
           <div class="practice-area-imp">
             <h4 class="creat-font"> LITIGATION </h4>
             <p>
@@ -130,7 +193,7 @@
       </div>
     </section>
     <section class="section-wrapper" id="our-vision">
-      <div class="headding-our-vision">
+      <div class="headding-our-vision textopycity">
         <h1>OUR VISION</h1>
       </div>
       <div class="our-vision-text">
@@ -158,7 +221,7 @@
       </div>
     </section>
     <section class="profile-wrapper" id="attorneys">
-      <div class="headding-our-attorneys">
+      <div class="headding-our-attorneys textopycity">
         <h1>OUR ATTORNEYS</h1>
       </div>
       <div class="partner-profile">
@@ -185,7 +248,7 @@
     <section class="contact-wrapper" id="contact">
         <div class="allabout-contact">
           <div class="contact-heading">
-            <h1>CONTACT<br>KNOLL &<br> WALTERS</h1>
+            <h1>CONTACT<br>KNOLL & WALTERS</h1>
           </div>
           <div class="contact-info">
             <div class="contact-details">
@@ -224,7 +287,7 @@
     </section>
     <section class="footer">
       <div class="creat-with">
-        <p>© 2023 by Knoll Walters LLP. Proudly created with<a>Wix.com</a></p>
+        <p>© 2023 by Knoll Walters LLP. Proudly created with<a href="wix.html">Wix.com</a></p>
       </div>
       <div class="apply-onclik">
         <div class="your-qustions">
@@ -235,7 +298,7 @@
             <i><span class="fas fa-bolt"></span>we'll reply soon as we can </i>
           </div>
           <div class="chat-midde-space">
-
+      
           </div>
           <div class="sponsor">
             <p>Powerd by<span>Ascand by wix</span></p>
@@ -249,11 +312,15 @@
           </form>
         </div>
       </div>
+      <div class="mobile-chat-button">
+        <button onclick="changeVision(true)"><i class="fas fa-comment-alt"></i></button>
+      </div>
       <div class="chat-with-us">
         <h4>CHAT WITH US</h4>
         <p><span class="fas fa-bolt"></span>we'll reply soon as we can </p>
         <button class="fas fa-chevron-up" onclick="changeVision(true)"></button>
       </div>
+     
     </section>
 
   </body>
