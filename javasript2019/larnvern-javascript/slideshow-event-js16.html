@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>slide show in using event </title>
-        <style type="text/css">
-            .image{
-                margin:20px;
-                width: 250px;
-                box-shadow: 0 4px 15px gray;
-            }
-        </style>
-        <script>
-            function boxAlert(){
-                var x = document.getElementById("name").value;
-                alert("thank you " + x + " !! ");
-            }
+  <head>
+    <title>slide show in using event</title>
+    <style type="text/css">
+      .image {
+        margin: 20px;
+        width: 250px;
+        box-shadow: 0 4px 15px gray;
+      }
+    </style>
+    <script>
+      function boxAlert() {
+        var x = document.getElementById("name").value;
+        alert("thank you " + x + " !! ");
+      }
+      //TOGGEL LOGIC
+      // 1-creat globel variabel..2-creat function and ude variabel afetr using change vaeriabel ase per your logic
+      var counter = 1;
 
-            var counter=1;
-
-            function change()
-            {
-                var image = document.querySelector('.image')
-                if(counter==1){
-                    image.src="img/home4.jpg"
-                    counter=2
-                }
-                else if(counter==2){
-                    image.src="img/pd_1.jpg"
-                    counter=3
-                }
-                else if(counter==3){
-                    image.src="img/pd_2.jpg"
-                    counter=4
-                }
-                else if(counter==4){
-                    image.src="img/pd_5.jpg"
-                    counter=5
-                }
-                else if(counter==5){
-                    image.src="img/pd_6.jpg"
-                    counter=6
-                }
-                else{
-                    image.src="img/author-carousel.jpg"
-                    counter=6
-                }
-            }
-        
-        </script>
-    </head>
-    <body>
-        <h2>slideshoew in javascript</h2>
-        <img class="image" src="img/home4.jpg"/>
-        <form>
-            Enter Name :<input type="text" name="name" id="name"/>
-            <button type="button" onclick="change()">Veiw All</button>
-            <button type="submit" onclick="boxAlert()">finish</button>
-        </form>
-    </body>
+      function change() {
+        var image = document.querySelector(".image");
+        if (counter == 1) {
+          image.src = "img/home4.jpg";
+          counter = 2;
+        } else if (counter == 2) {
+          image.src = "img/pd_1.jpg";
+          counter = 3;
+        } else if (counter == 3) {
+          image.src = "img/pd_2.jpg";
+          counter = 4;
+        } else if (counter == 4) {
+          image.src = "img/pd_5.jpg";
+          counter = 5;
+        } else if (counter == 5) {
+          image.src = "img/pd_6.jpg";
+          counter = 6;
+        } else {
+          image.src = "img/author-carousel.jpg";
+          counter = 6;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>slideshoew in javascript</h2>
+    <img class="image" src="img/home4.jpg" />
+    <form>
+      Enter Name :<input type="text" name="name" id="name" />
+      <button type="button" onclick="change()">Veiw All</button>
+      <button type="submit" onclick="boxAlert()">finish</button>
+    </form>
+  </body>
 </html>

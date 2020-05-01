@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>switch case</title>
-    </head>
-    <body>
-        <h2>prompt box in switch case</h2>
-        <h4>our courses name </h4>
-        <p>javascript</p>
-        <p>HTML</p>
-        <p>css</p>
-        <p>java</p>
-        <h3>your selected course </h3>
-        <p id="demo" style= color:red;font-size:20px;></p>
-        <script>
-            var text ;
-            var c=prompt("enter you course");
-            var courses=parseInt(c);
-            switch(courses)
-            {
-                case 1: text="you are selected javascript ...let started javascript";
-                break;
+  <head>
+    <title>switch case</title>
+  </head>
+  <body>
+    <h2>prompt box in switch case</h2>
+    <h4>our courses name</h4>
+    <p>1.javascript</p>
+    <p>2.HTML</p>
+    <p>3.css</p>
+    <p>4.java</p>
+    <h3>your selected course</h3>
+    <input type="number" name="value" onkeyup="selectCourse(this,event)" />
+    <p id="demo" style="color: red; font-size: 20px;"></p>
+    <script>
+      function selectCourse(el, event) {
+        if (event.keyCode === 13) {
+          var text;
+          var c = el.value;
+          var courses = parseInt(c);
+          switch (courses) {
+            case 1:
+              text = "you are selected javascript ...let started javascript";
+              break;
 
-                case 2: text="you are selected HTML ...let started HTML";
-                break;
+            case 2:
+              text = "you are selected HTML ...let started HTML";
+              break;
 
-                case 3: text="you are selected CSS ...let started CSS";
-                break;
+            case 3:
+              text = "you are selected CSS ...let started CSS";
+              break;
 
-                case 4: text="you are selected java ...let started java";
-                break;
+            case 4:
+              text = "you are selected java ...let started java";
+              break;
 
-                default: text="no such course ";
-                break;
-            }
-            document.getElementById("demo").innerHTML=text;
-        </script>
-    </body>
-    </html>
+            default:
+              text = "no such course ";
+              break;
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+      }
+    </script>
+  </body>
+</html>
