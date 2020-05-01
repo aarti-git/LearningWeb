@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            var n=5;
-            for(var i=1; i<=n; i++ ){
-                for(j=1; j<=n; j++){
-                    if(i==j || i+j==(n+1)){
-                        document.write("*");
-                    }
-                    else{
-                        document.write("&nbsp;")
-                    }
-			}
-            document.write("<br/>");
+  <head> </head>
+  <body>
+    <h1>creat cross in for loop</h1>
+    <input type="number" name="value" id="inputValue" />
+    <button onclick="cross()">click me</button>
+    <script>
+      function cross() {
+        var n = document.getElementById("inputValue").value;
+        for (var i = 1; i <= n; i++) {
+          for (j = 1; j <= n; j++) {
+            if (i == j || j == n - i + 1) {
+              document.write("*");
+            } else {
+              document.write("&nbsp;");
             }
-        </script>
-    </head>
+          }
+          document.write("<br/>");
+        }
+      }
+    </script>
+  </body>
 </html>
